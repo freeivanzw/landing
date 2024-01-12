@@ -1,0 +1,25 @@
+/*BTN*/
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--btn-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    width: max-content;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--btn-text-hover);
+}

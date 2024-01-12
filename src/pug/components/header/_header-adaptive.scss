@@ -1,0 +1,34 @@
+@mixin header-480 {
+    /*HEADER*/
+    .site_header {
+        background-color: red;
+    }
+}
+
+@mixin header-640 {
+    /*HEADER*/
+    .site_header {
+        background-color: #f7ff00;
+    }
+}
+
+@mixin header-768 {
+    /*HEADER*/
+    .site_header {
+        background-color: #00ff15;
+    }
+}
+
+@mixin header-1024 {
+    /*HEADER*/
+    .site_header {
+        background-color: #003cff;
+    }
+}
+
+@mixin header-1280 {
+    /*HEADER*/
+    .site_header {
+        background-color: #ff00c3;
+    }
+}

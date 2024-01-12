@@ -1,0 +1,6 @@
+mixin btn(data)
+    - const {name, size} = data
+    - var listClass = ['btn']
+    - if (size === 'big') {listClass.push('big_btn');}
+    - if (size === 'small') {listClass.push('small_btn');}
+    a(class=listClass)= name

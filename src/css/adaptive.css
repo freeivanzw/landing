@@ -1,0 +1,63 @@
+@media only screen and (min-width: 480px) {
+  /* -------- UI -------- */
+  /*BTN*/
+  /*DROPDOWN*/
+  /* -------- COMPONENTS -------- */
+  /*HEADER*/
+  .site_header {
+    background-color: red;
+  }
+
+  /*FOOTER*/
+  .site_footer {
+    background-color: #e38080;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /* -------- UI -------- */
+  /*BTN*/
+  /*DROPDOWN*/
+  /* -------- COMPONENTS -------- */
+  /*HEADER*/
+  .site_header {
+    background-color: #f7ff00;
+  }
+
+  /*FOOTER*/
+}
+@media only screen and (min-width: 768px) {
+  /* -------- UI -------- */
+  /*BTN*/
+  /*DROPDOWN*/
+  /* -------- COMPONENTS -------- */
+  /*HEADER*/
+  .site_header {
+    background-color: #00ff15;
+  }
+
+  /*FOOTER*/
+}
+@media only screen and (min-width: 1024px) {
+  /* -------- UI -------- */
+  /*BTN*/
+  /*DROPDOWN*/
+  /* -------- COMPONENTS -------- */
+  /*HEADER*/
+  .site_header {
+    background-color: #003cff;
+  }
+
+  /*FOOTER*/
+}
+@media only screen and (min-width: 1280px) {
+  /* -------- UI -------- */
+  /*BTN*/
+  /*DROPDOWN*/
+  /* -------- COMPONENTS -------- */
+  /*HEADER*/
+  .site_header {
+    background-color: #ff00c3;
+  }
+
+  /*FOOTER*/
+}

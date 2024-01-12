@@ -1,0 +1,14 @@
+/* -------- SERVICES -------- */
+@import "services/fonts";
+@import "services/variables";
+@import "services/reset";
+@import "services/base";
+/* -------- PLUGINS -------- */
+@import "plugins/slick";
+/* -------- UI -------- */
+@import "../../pug/ui/btn/btn";
+@import "../../pug/ui/dropdown/dropdown";
+/* -------- COMPONENTS -------- */
+@import "../../pug/components/header/header";
+@import "../../pug/components/footer/footer";
+

@@ -1,0 +1,16 @@
+mixin dropdown(data)
+    - const {name, className, list} = data;
+    - let classList = ['dropdown'];
+    - if(className) {classList.push(className)}
+    div(class=classList)
+        .overflow
+            span= name
+            button.drop_arrow
+        ul
+            if (list)
+                each item in list
+                    li= item
+            else
+                li item item 1
+                li item item 1
+        input(type="hidden" name="payment" value="")
