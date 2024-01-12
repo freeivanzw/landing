@@ -1,31 +1,52 @@
-/* variables */
 :root {
-	--primary: #0375bf;
-	--secondary: #addcfb;
-	--success: #65E930FF;
-	--info: #30e9e7;
-	--warning: #e9d130;
-	--danger: #e94630;
+	--base-color-1: #ffffff;
+	--base-color-2: #F6F6F6;
+	--base-color-3: #EBECF2;
+	--base-color-4: #CECFD9;
+	--base-color-5: #AAAAB2;
+	--base-color-6: #85858A;
+	--base-color-7: #626366;
+	--base-color-8: #333333;
+	--base-color-9: #1E1E1E;
 
-	--site-bg-color: #FFFFFF;
-	--footer-color: #201E50;
+	--accent-color-1: #7A998C;
+	--accent-color-2: #5A756A;
+	--accent-color-3: #3B4C45;
+	--accent-color-4: #C7D4CF;
+	--accent-color-5: #DCE5E2;
+	--accent-color-6: #EFF4F2;
+	--accent-color-7: #F5F7F6;
 
-	--btn-bg: #03D6E7;
-	--btn-border: #03D6E7;
-	--btn-contrast: #0DCC71;
-	--btn-text: #FFFFFF;
-	--btn-text-hover: #03D6E7;
+	--additional-1: #C13055;
+	--additional-2: #F2CBD5;
+	--additional-3: #1A724D;
+	--additional-4: #FEC601;
 
-	--text-color: #1F1F1F;
-	--text-light: #5F5F5F;
-	--text-contrast: #ffffff;
-	--text-main-color: #03D6E7;
+	--text-color: #1E1E1E;
 
-	--border-color: #03D6E7;
-	--icon-color: #1F1F1F;
-	--active-icon-color: #03D6E7;
-	--link-color: #1F1F1F;
-	--link-color-active: #03D6E7;
+	--site-bg-color: #F5F7F6;
 
-	--section-bottom: 48px;
+	--btn-text: #ffffff;
+	--btn-bg: #7A998C;
+	--btn-border: #7A998C;
+	--btn-text-hover: #ffffff;
+	--btn-bg-hover: #5A756A;
+	--btn-border-hover: #5A756A;
+	--btn-text-active: #ffffff;
+	--btn-bg-active: #3B4D45;
+	--btn-border-active: #3B4D45;
+
+	--btn-text-outline: #7A998C;
+	--btn-bg-outline: transparent;
+	--btn-border-outline: #7A998C;
+	--btn-text-outline-hover: #ffffff;
+	--btn-bg-outline-hover: #7A998C;
+	--btn-border-outline-hover: #7A998C;
+	--btn-text-outline-active: #ffffff;
+	--btn-bg-outline-active: #5A756A;
+	--btn-border-outline-active: #5A756A;
+
+	--border-color: #CECFD9;
+	--border-radius: 6px;
 }
+

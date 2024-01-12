@@ -61,6 +61,11 @@ gulp.task('prebuild', async function() {
  
 });
 
+gulp.task('favicon', async function() {
+	var favicon = gulp.src('src/favicon/**/*')
+		.pipe(gulp.dest('dist/favicon'))
+});
+
 function compilePugTask() {
 	return gulp.src('src/pug/*.pug')
 		.pipe(gulpPug({
@@ -86,5 +91,5 @@ gulp.task('serve', function () {
 	gulp.watch('src/js/**/*.js').on("change", reload);
 });
 
-gulp.task('build', gulp.series('prebuild', 'clean',  'sass', 'scripts', 'plugins', 'images'));
+gulp.task('build', gulp.series('prebuild', 'clean',  'sass', 'scripts', 'plugins', 'images', 'favicon'));
 

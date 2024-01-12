@@ -1,0 +1,60 @@
+
+@mixin base-480 {
+    /*BASE*/
+
+    /*BASE*/
+}
+
+@mixin base-640 {
+    /*BASE*/
+
+    /*BASE*/
+}
+
+@mixin base-768 {
+    /*BASE*/
+
+    article > * {
+        margin-bottom: 32px;
+    }
+
+    h1,
+    .H1 {
+        font-size: 40px;
+        letter-spacing: 0.8px;
+        margin-bottom: 24px;
+    }
+
+    h2,
+    .H2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    h3,
+    .H3 {
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
+
+    h4,
+    .H4 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+
+    /*BASE*/
+}
+
+@mixin base-1024 {
+    /*BASE*/
+
+    /*BASE*/
+}
+
+@mixin base-1332 {
+    /*BASE*/
+
+    /*BASE*/
+}

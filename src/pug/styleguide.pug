@@ -1,0 +1,78 @@
+extends layouts/main.pug
+include ui/btn/btn
+include ui/dropdown/dropdown
+
+block content
+    .styleguide(style="display: flex; flex-direction: column;")
+        +dropdown({
+            name: 'Спосію оплати світла',
+            className: 'order_payment',
+            list: ['ua', 'pl', 'sdfsdf']
+        })
+        +dropdown({
+            name: 'Спосію оплати темний',
+            className: 'order_payment',
+            style: 'filled',
+            list: ['ua', 'pl', 'sdfsdf']
+        })
+        +dropdown({
+            name: 'Спосію оплати світла',
+            className: 'order_payment',
+            size: 'small',
+            list: ['ua', 'pl', 'sdfsdf']
+        })
+        span="."
+        input(type="text" placeholder="Name")
+        span="."
+        input(type="text" placeholder="Name").error
+        span="."
+        input(type="text" placeholder="Name" disabled="")
+        span="."
+        textarea(placeholder="text")
+        span="."
+        +btn({
+            name: 'клипочка велика',
+            size: 'big',
+        })
+        span="."
+        +btn({
+            name: 'Клипочка маленька',
+            className: 'main_btn',
+            size: 'small',
+        })
+        span="."
+        +btn({
+            name: 'Клипочка',
+        })
+        span="."
+        +btn({
+            name: 'Клипочка не активна',
+            disabled: true,
+        })
+        span="."
+        +btn({
+            name: 'Клипочка обведена',
+            outline: true,
+        })
+        article(style="display: flex; flex-direction: column;")
+            h1 Hello World
+            span.H1 Hello world
+            h2 Hello World
+            span.H2 Hello world
+            h3 Hello World
+            span.H3 Hello world
+            h4 Hello World
+            span.H4 Hello world
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, excepturi, facere. Veniam!
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, excepturi, facere. Veniam!
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, excepturi, facere. Veniam!
+            ul
+                li test test test
+                li test test test
+                li test test test
+                li test test test
+            ol
+                li test test test
+                li test test test
+                li test test test
+                li test test test

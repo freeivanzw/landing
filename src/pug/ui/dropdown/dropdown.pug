@@ -1,6 +1,8 @@
 mixin dropdown(data)
-    - const {name, className, list} = data;
+    - const {name, className, list, size, style} = data;
     - let classList = ['dropdown'];
+    - if(size === 'small') {classList.push('small')}
+    - if(style === 'filled') {classList.push('filled')}
     - if(className) {classList.push(className)}
     div(class=classList)
         .overflow

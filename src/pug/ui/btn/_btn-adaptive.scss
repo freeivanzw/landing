@@ -1,24 +1,37 @@
 @mixin btn-480 {
-   /*BTN*/
+    /*BTN*/
 
+    /*BTN*/
 }
 
 @mixin btn-640 {
-   /*BTN*/
+    /*BTN*/
 
+    /*BTN*/
 }
 
 @mixin btn-768 {
-   /*BTN*/
-
+    /*BTN*/
+    .btn {
+        font-size: 16px;
+        min-height: 44px;
+    }
+    .btn.big_btn {
+        font-size: 20px;
+        padding: 8px 30px;
+        min-height: 60px;
+    }
+    /*BTN*/
 }
 
 @mixin btn-1024 {
-   /*BTN*/
+    /*BTN*/
 
+    /*BTN*/
 }
 
-@mixin btn-1280 {
-   /*BTN*/
+@mixin btn-1332 {
+    /*BTN*/
 
+    /*BTN*/
 }

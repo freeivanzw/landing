@@ -1,6 +1,10 @@
 mixin btn(data)
-    - const {name, size} = data
-    - var listClass = ['btn']
-    - if (size === 'big') {listClass.push('big_btn');}
+    - const {name, size, disabled, href, outline, className} = data
+    - let listClass = ['btn']
     - if (size === 'small') {listClass.push('small_btn');}
-    a(class=listClass)= name
+    - if (size === 'big') {listClass.push('big_btn');}
+    - if (disabled) {listClass.push('disabled');}
+    - if (outline) {listClass.push('btn_outline');}
+    - if (className) {listClass.push(className);}
+    - let link = href ? href : '#';
+    a(href=link class=listClass)= name

@@ -2,9 +2,11 @@
 @import "../../pug/ui/dropdown/dropdown-adaptive";
 @import "../../pug/components/header/header-adaptive";
 @import "../../pug/components/footer/footer-adaptive";
+@import "./services/base-adaptive";;
 
 @media only screen and (min-width : 480px)  {
     /* -------- UI -------- */
+    @include base-480;
     @include btn-480;
     @include dropdown-480;
     /* -------- COMPONENTS -------- */
@@ -14,6 +16,7 @@
 
 @media only screen and (min-width : 640px)  {
     /* -------- UI -------- */
+    @include base-640;
     @include btn-640;
     @include dropdown-640;
     /* -------- COMPONENTS -------- */
@@ -23,6 +26,7 @@
 
 @media only screen and (min-width : 768px)  {
     /* -------- UI -------- */
+    @include base-768;
     @include btn-768;
     @include dropdown-768;
     /* -------- COMPONENTS -------- */
@@ -32,6 +36,7 @@
 
 @media only screen and (min-width : 1024px) {
     /* -------- UI -------- */
+    @include base-1024;
     @include btn-1024;
     @include dropdown-1024;
     /* -------- COMPONENTS -------- */
@@ -39,11 +44,13 @@
     @include footer-1024;
 }
 
-@media only screen and (min-width : 1280px) {
+@media only screen and (min-width : 1332px) {
     /* -------- UI -------- */
-    @include btn-1280;
-    @include dropdown-1280;
+    @include base-1332;
+    @include btn-1332;
+    @include dropdown-1332;
     /* -------- COMPONENTS -------- */
-    @include header-1280;
-    @include footer-1280;
+
+    @include header-1332;
+    @include footer-1332;
 }
