@@ -17,14 +17,14 @@ $(function () {
                         .end()
                         .find('input').eq(1).val($this.find('.selected a').data('value'))
                         .end()
-                        .find('.selected').closest('li').hide();
+                        .find('.selected').closest('li');
                 } else {
                     $this.find('span:eq(0)')
                         .html($this.find('.selected').text() + settings.arrow)
                         .end()
                         .find('input').val($this.find('.selected a').data('value'))
                         .end()
-                        .find('.selected').closest('li').hide();
+                        .find('.selected').closest('li');
                 }
             }
 
@@ -82,7 +82,7 @@ $(function () {
                     if (settings.prevent === false) {
                         window.location.href = $(this).attr('href');
                     } else {
-                        $(this).closest('ul').find('.selected').removeClass('selected').show().end().end().closest('li').addClass('selected').hide();
+                        $(this).closest('ul').find('.selected').removeClass('selected').show().end().end().closest('li').addClass('selected');
 
                         if ($(this).find('.overflow input').length > 0) {
                             $this.find('input:eq(0)').val($(this).text()).end().find('input:eq(1)').val($(this).data('value'));

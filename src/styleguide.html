@@ -21,37 +21,100 @@
   <body>
     <header class="site_header"><span>site header</span></header>
     <main>
-      <div class="styleguide" style="display: flex; flex-direction: column;">
+      <div class="styleguide" style="display: flex; flex-direction: column; padding: 12px;">
+        <label class="styled_input"><span class="styled_label">Ваше імя</span>
+          <div class="styled_box">
+            <input type="text" placeholder="імя"/>
+            <div class="input_icon"><img class="error_icon" src="./images/error-icon.svg" width="22" height="22" alt="error icon"/></div>
+          </div>
+        </label>
+        <label class="styled_input"><span class="styled_label">Ваше імя</span>
+          <div class="styled_box">
+            <textarea placeholder="імя"></textarea>
+            <div class="input_icon"><img class="error_icon" src="./images/error-icon.svg" width="22" height="22" alt="error icon"/></div>
+          </div>
+        </label>
+        <label class="styled_input"><span class="styled_label">Ваше імя важилово<i>*</i></span>
+          <div class="styled_box">
+            <input type="email" placeholder="імя"/>
+            <div class="input_icon"><img class="error_icon" src="./images/error-icon.svg" width="22" height="22" alt="error icon"/></div>
+          </div>
+        </label>
+        <label class="styled_input"><span class="styled_label">Ваше імя помилка</span>
+          <div class="styled_box">
+            <input class="error" type="password" placeholder="імя"/>
+            <div class="input_icon"><img class="error_icon" src="./images/error-icon.svg" width="22" height="22" alt="error icon"/></div>
+          </div><span class="styled_info error">інфо про помилку</span>
+        </label>
+        <label class="styled_input"><span class="styled_label">Ваше імя не активно</span>
+          <div class="styled_box">
+            <input type="text" placeholder="імя" disabled="disabled"/>
+            <div class="input_icon"><img class="error_icon" src="./images/error-icon.svg" width="22" height="22" alt="error icon"/></div>
+          </div>
+        </label>
         <div class="dropdown order_payment">
-          <div class="overflow"><span>Спосію оплати світла</span>
+          <div class="overflow"><span>Випадайка світла</span>
             <button class="drop_arrow"></button>
           </div>
           <ul>
-            <li>ua</li>
-            <li>pl</li>
-            <li>sdfsdf</li>
+            <li><a href="#">ua</a></li>
+            <li><a href="#">pl</a></li>
+            <li><a href="#">sdfsdf</a></li>
           </ul>
           <input type="hidden" name="payment" value=""/>
-        </div>
-        <div class="dropdown filled order_payment">
-          <div class="overflow"><span>Спосію оплати темний</span>
-            <button class="drop_arrow"></button>
-          </div>
-          <ul>
-            <li>ua</li>
-            <li>pl</li>
-            <li>sdfsdf</li>
-          </ul>
-          <input type="hidden" name="payment" value=""/>
-        </div>
+        </div><span>.</span>
         <div class="dropdown small order_payment">
-          <div class="overflow"><span>Спосію оплати світла</span>
+          <div class="overflow"><span>Випадайка світла</span>
             <button class="drop_arrow"></button>
           </div>
           <ul>
-            <li>ua</li>
-            <li>pl</li>
-            <li>sdfsdf</li>
+            <li><a href="#">ua</a></li>
+            <li><a href="#">pl</a></li>
+            <li><a href="#">sdfsdf</a></li>
+          </ul>
+          <input type="hidden" name="payment" value=""/>
+        </div><span>.</span>
+        <div class="dropdown filled order_payment">
+          <div class="overflow"><span>Випадайка темний</span>
+            <button class="drop_arrow"></button>
+          </div>
+          <ul>
+            <li><a href="#">ua</a></li>
+            <li><a href="#">pl</a></li>
+            <li><a href="#">sdfsdf</a></li>
+          </ul>
+          <input type="hidden" name="payment" value=""/>
+        </div><span>.
+          <div class="dropdown small filled order_payment">
+            <div class="overflow"><span>Випадайка темний</span>
+              <button class="drop_arrow"></button>
+            </div>
+            <ul>
+              <li><a href="#">ua</a></li>
+              <li><a href="#">pl</a></li>
+              <li><a href="#">sdfsdf</a></li>
+            </ul>
+            <input type="hidden" name="payment" value=""/>
+          </div></span><span>.</span>
+        <div class="dropdown disabled order_payment">
+          <div class="overflow"><span>Випадайка світла</span>
+            <button class="drop_arrow"></button>
+          </div>
+          <ul>
+            <li><a href="#">ua</a></li>
+            <li><a href="#">pl</a></li>
+            <li><a href="#">sdfsdf</a></li>
+          </ul>
+          <input type="hidden" name="payment" value=""/>
+        </div><span>.</span>
+        <div class="dropdown filled disabled order_payment">
+          <div class="overflow"><span>Випадайка темний</span>
+            <button class="drop_arrow"></button>
+          </div>
+          <ul>
+            <li><a href="#">ua</a></li>
+            <li><a href="#">pl</a></li>
+            <li><a href="#">sdfsdf</a></li>
           </ul>
           <input type="hidden" name="payment" value=""/>
         </div><span>.</span>

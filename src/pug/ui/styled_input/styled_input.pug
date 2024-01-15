@@ -1,0 +1,17 @@
+mixin styled_input(data)
+    - const {label, important,  type, placeholder, error, errorText, disabled } = data;
+    - let inputClasses = [];
+    - if (error) {inputClasses.push('error')}
+    label.styled_input
+        span.styled_label=label
+            - if (important)
+                i *
+        div.styled_box
+            - if (type === 'textarea')
+                textarea(placeholder=placeholder class=inputClasses disabled=disabled)
+            - else
+                input(type=type placeholder=placeholder class=inputClasses disabled=disabled)
+            div.input_icon
+                img(src='./images/error-icon.svg' width=22 height=22 alt='error icon').error_icon
+        - if (errorText)
+            span.styled_info.error=errorText

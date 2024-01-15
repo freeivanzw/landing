@@ -1,8 +1,9 @@
 mixin dropdown(data)
-    - const {name, className, list, size, style} = data;
+    - const {name, className, list, size, style, disabled} = data;
     - let classList = ['dropdown'];
     - if(size === 'small') {classList.push('small')}
     - if(style === 'filled') {classList.push('filled')}
+    - if(disabled) {classList.push('disabled')}
     - if(className) {classList.push(className)}
     div(class=classList)
         .overflow
@@ -11,8 +12,11 @@ mixin dropdown(data)
         ul
             if (list)
                 each item in list
-                    li= item
+                    li
+                        a(href="#")= item
             else
-                li item item 1
-                li item item 1
+                li
+                    a(href="#") item item 1
+                    a(href="#") item item 1
+                    a(href="#") item item 1
         input(type="hidden" name="payment" value="")

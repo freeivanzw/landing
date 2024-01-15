@@ -1,25 +1,80 @@
 extends layouts/main.pug
 include ui/btn/btn
 include ui/dropdown/dropdown
+include ui/styled_input/styled_input
 
 block content
-    .styleguide(style="display: flex; flex-direction: column;")
+    .styleguide(style="display: flex; flex-direction: column; padding: 12px;")
+        +styled_input({
+            label: 'Ваше імя',
+            type: 'text',
+            placeholder: 'імя',
+        })
+        +styled_input({
+            label: 'Ваше імя',
+            type: 'textarea',
+            placeholder: 'імя',
+        })
+        +styled_input({
+            label: 'Ваше імя важилово',
+            type: 'email',
+            placeholder: 'імя',
+            important: true,
+        })
+        +styled_input({
+            label: 'Ваше імя помилка',
+            type: 'password',
+            placeholder: 'імя',
+            error: true,
+            errorText: 'інфо про помилку'
+        })
+        +styled_input({
+            label: 'Ваше імя не активно',
+            type: 'text',
+            placeholder: 'імя',
+            disabled: true,
+        })
         +dropdown({
-            name: 'Спосію оплати світла',
+            name: 'Випадайка світла',
             className: 'order_payment',
             list: ['ua', 'pl', 'sdfsdf']
         })
+        span="."
         +dropdown({
-            name: 'Спосію оплати темний',
+            name: 'Випадайка світла',
+            className: 'order_payment',
+            size: 'small',
+            list: ['ua', 'pl', 'sdfsdf']
+        })
+        span="."
+        +dropdown({
+            name: 'Випадайка темний',
             className: 'order_payment',
             style: 'filled',
             list: ['ua', 'pl', 'sdfsdf']
         })
+        span="."
+            +dropdown({
+                name: 'Випадайка темний',
+                className: 'order_payment',
+                size: 'small',
+                style: 'filled',
+                list: ['ua', 'pl', 'sdfsdf']
+            })
+        span="."
         +dropdown({
-            name: 'Спосію оплати світла',
+            name: 'Випадайка світла',
             className: 'order_payment',
-            size: 'small',
-            list: ['ua', 'pl', 'sdfsdf']
+            list: ['ua', 'pl', 'sdfsdf'],
+            disabled: true,
+        })
+        span="."
+        +dropdown({
+            name: 'Випадайка темний',
+            className: 'order_payment',
+            style: 'filled',
+            list: ['ua', 'pl', 'sdfsdf'],
+            disabled: true,
         })
         span="."
         input(type="text" placeholder="Name")
