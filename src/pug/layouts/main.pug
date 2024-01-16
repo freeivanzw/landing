@@ -23,8 +23,17 @@ html(lang="en")
     body
         +header()
         main
-            block content
+            div.main_container
+                aside.aside_menu
+                    span фільтри
+                    span останні новини
+                section.content_box
+                    block content
+                div.mobile_container
+                    span останні новини
         +footer()
+
+        div.black.hidden
 
         script(src="./js/jquery.min.js")
         script(src="./js/plugins/slick.min.js")

@@ -19,10 +19,127 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <header class="site_header"><span>site header</span></header>
-    <main><span>main page</span>
+    <header class="site_header">
+      <div class="top_header">
+        <div class="centre"><a class="top_mob-logo" href="#"><img src="./images/header-mob-logo.svg" width="36" height="36"/></a>
+          <div class="top_header-text"><a class="site_name" href="#">vsisanatorii.com.ua</a><span class="site_name-subtitle">Всі санаторії</span></div><a class="top_header-btn open-mob_phones" href="#">phones btn
+            <svg class="icon phone_icon">
+              <use xlink:href="./images/sprite.svg#phone"></use>
+            </svg>
+            <svg class="icon close_icon">
+              <use xlink:href="./images/sprite.svg#close"></use>
+            </svg></a><a class="top_header-btn open-mob_menu" href="#">mob menu btn
+            <svg class="icon menu_icon">
+              <use xlink:href="./images/sprite.svg#menu"></use>
+            </svg>
+            <svg class="icon close_icon">
+              <use xlink:href="./images/sprite.svg#close"></use>
+            </svg></a>
+        </div>
+        <div class="mobile_menu">
+          <div class="mobile-change_lang"><a class="active" href="#">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#ua"></use>
+              </svg><span>Українська</span></a><a href="#"><span>Російська</span></a></div>
+          <ul class="mob-top_menu">
+            <li><a href="#"><span>Головна</span></a></li>
+            <li class="has_drop"><a href="#">
+                <sapn>Санаторії</sapn></a>
+              <ul>
+                <li><a href="#"><span>Трускавець</span></a>
+                </li>
+                <li><a href="#"><span>Східниця</span></a>
+                </li>
+                <li><a class="active" href="#"><span>Моршин</span></a>
+                </li>
+                <li><a href="#"><span>Станів</span></a>
+                </li>
+                <li><a href="#"><span>Закарпаття</span></a>
+                </li>
+                <li><a href="#"><span>Хмільник</span></a>
+                </li>
+                <li><a href="#"><span>Миргород</span></a>
+                </li>
+                <li><a href="#"><span>Карпати</span></a>
+                </li>
+              </ul>
+            </li>
+            <li><a class="active" href="#"><span>Блог</span></a></li>
+            <li><a href="#"><span>Новини</span></a></li>
+          </ul>
+          <div class="reservation"><span class="reservation_name">Відділ бронювання</span>
+            <ul class="reservation_phones">
+              <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="./images/sprite.svg#viber"></use>
+                  </svg><span>+38 (097) 05 77 388</span></a></li>
+              <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="./images/sprite.svg#vodafone"></use>
+                  </svg><span>+38 (066) 67 91 174</span></a></li>
+              <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="./images/sprite.svg#phone"></use>
+                  </svg><span>+38 (066) 67 91 174</span></a></li>
+            </ul><a class="btn" href="#">Замовити дзвінок</a>
+          </div><a class="mob-menu_email" href="#">
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#email"></use>
+            </svg><span>info@vsisanatorii.com.ua</span></a>
+        </div>
+        <div class="reservation-popup"><span class="reservation-popup_name">Відділ бронювання</span>
+          <ul class="reservation-popup_phones">
+            <li><a href="#">
+                <svg class="icon">
+                  <use xlink:href="./images/sprite.svg#viber"></use>
+                </svg><span>+38 (097) 05 77 388</span></a></li>
+            <li><a href="#">
+                <svg class="icon">
+                  <use xlink:href="./images/sprite.svg#vodafone"></use>
+                </svg><span>+38 (066) 67 91 174</span></a></li>
+            <li><a href="#">
+                <svg class="icon">
+                  <use xlink:href="./images/sprite.svg#phone"></use>
+                </svg><span>+38 (066) 67 91 174</span></a></li>
+          </ul><a class="btn big_btn" href="#">Замовити дзвінок</a>
+        </div>
+      </div>
+      <div class="mobile_catalog">
+        <div class="centre"><a class="mob_catalog-gtn" href="#">
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#mob-catalog"></use>
+            </svg><span>Каталог санаторіїв</span></a>
+          <ul class="mobile_catalog-list">
+            <li><a href="#"><span>Трускавець</span></a>
+            </li>
+            <li><a href="#"><span>Східниця</span></a>
+            </li>
+            <li><a class="active" href="#"><span>Моршин</span></a>
+            </li>
+            <li><a href="#"><span>Станів</span></a>
+            </li>
+            <li><a href="#"><span>Закарпаття</span></a>
+            </li>
+            <li><a href="#"><span>Хмільник</span></a>
+            </li>
+            <li><a href="#"><span>Миргород</span></a>
+            </li>
+            <li><a href="#"><span>Карпати</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main_container">
+        <aside class="aside_menu"><span>фільтри</span><span>останні новини</span></aside>
+        <section class="content_box"><span>main page</span>
+        </section>
+        <div class="mobile_container"><span>останні новини</span></div>
+      </div>
     </main>
     <footer class="site_footer"><span>site footer</span></footer>
+    <div class="black hidden"></div>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/plugins/slick.min.js"></script>
     <script src="./js/index.js"></script>

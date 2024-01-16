@@ -1,5 +1,501 @@
 /*HEADER*/
 .site_header {
-    background-color: red;
+    width: 100%;
+    padding: 56px 0 10px 0;
+    background-color: var(--base-color-1);
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.08);
 }
+
+.site_header > .centre {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--base-color-1);
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    z-index: 11;
+}
+
+.top_header.shadow {
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.08);
+}
+
+.top_header > .centre {
+    display: flex;
+    align-items: center;
+}
+
+.top_mob-logo {
+    flex: 0 0 36px;
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+
+.top_header-text {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.top_header .site_name {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.top_header .site_name-subtitle {
+    font-size: 9px;
+    font-weight: 400;
+    color: var(--base-color-5);
+}
+
+.top_header-btn {
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: var(--accent-color-5);
+    position: relative;
+}
+
+.top_header-btn.active {
+    background-color: var(--accent-color-1);
+}
+
+.top_header-btn.open-mob_menu {
+    margin-left: 16px;
+}
+
+.top_header-btn .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: var(--accent-color-1);
+    transition: 0.3s;
+}
+
+.top_header-btn.active .icon {
+    fill: var(--base-color-1);
+}
+
+.top_header-btn.open-mob_menu .icon.close_icon {
+    opacity: 0;
+}
+
+.top_header-btn.open-mob_menu.active .icon.close_icon {
+    opacity: 1;
+}
+
+.top_header-btn.open-mob_menu.active .icon.menu_icon {
+    opacity: 0;
+}
+
+
+.top_header-btn.open-mob_phones .icon.close_icon {
+    opacity: 0;
+}
+
+.top_header-btn.open-mob_phones.active .icon.close_icon {
+    opacity: 1;
+}
+
+.top_header-btn.open-mob_phones.active .icon.phone_icon {
+    opacity: 0;
+}
+
+
+
+.mobile_catalog {
+
+}
+
+.mob_catalog-gtn {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--base-color-1);
+    display: flex;
+    align-items: center;
+    padding: 10px 26px 10px 16px;
+    background-color: var(--accent-color-2);
+    border-radius: var(--border-radius);
+    position: relative;
+}
+
+.mobile_catalog.active .mob_catalog-gtn {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.mob_catalog-gtn .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.mob_catalog-gtn::before,
+.mob_catalog-gtn::after {
+    content: "";
+    width: 1px;
+    height: 8px;
+    background-color: var(--base-color-1);
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform-origin: bottom;
+    transition: 0.3s;
+}
+
+.mob_catalog-gtn::before {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.mob_catalog-gtn::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.mobile_catalog.active .mob_catalog-gtn::before {
+    transform-origin: top;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.mobile_catalog.active .mob_catalog-gtn::after {
+    transform-origin: top;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.mobile_catalog-list {
+    color: var(--base-color-1);
+    display: none;
+    flex-direction: column;
+    padding: 5px 14px;
+    background-color: var(--accent-color-1);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.mobile_catalog.active .mobile_catalog-list {
+    display: flex;
+}
+
+.mobile_catalog-list li {
+    display: flex;
+}
+
+.mobile_catalog-list li + li {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.mobile_catalog-list a {
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    color: var(--base-color-1);
+}
+
+.mobile_catalog-list a span {
+    display: block;
+
+}
+
+.mobile_catalog-list > li> a.active > span {
+    color: var(--additional-4);
+    border-bottom: 1px solid var(--additional-4)
+}
+
+.mobile_menu {
+    font-size: 16px;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 16px 32px 16px;
+    width: 100%;
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+    background-color: var(--accent-color-7);
+    border-top: 1px solid var(--accent-color-4);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.mobile_menu.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-change_lang {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--accent-color-4);
+}
+
+.mobile-change_lang a {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    flex: 1 1 auto;
+}
+
+.mobile-change_lang a.active {
+    background-color: var(--accent-color-5);
+}
+
+.mobile-change_lang a .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.mob-top_menu {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--accent-color-4);
+}
+
+.mob-top_menu > li {
+    display: block;
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+}
+
+.mob-top_menu > li.has_drop.opened {
+    background-color: var(--base-color-1);
+}
+
+.mob-top_menu a {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 8px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.mob-top_menu a span {
+    display: block;
+}
+
+.mob-top_menu a.active span {
+    color: var(--accent-color-1);
+    border-bottom: 1px solid var(--accent-color-1);
+}
+
+.mob-top_menu > li.has_drop > a {
+    padding-right: 28px;
+}
+
+.mob-top_menu > li.has_drop.opened > a {
+    font-weight: 600;
+}
+
+.mob-top_menu > li.has_drop > a::before,
+.mob-top_menu > li.has_drop > a::after {
+    content: "";
+    width: 1px;
+    height: 7px;
+    background-color: var(--accent-color-1);
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform-origin: bottom;
+    transition: 0.3s;
+}
+
+.mob-top_menu > li.has_drop > a::before{
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.mob-top_menu > li.has_drop > a::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.mob-top_menu > li.has_drop.opened > a::before{
+    transform-origin: top;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.mob-top_menu > li.has_drop.opened > a::after {
+    transform-origin: top;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.mob-top_menu > li > ul  {
+    padding-left: 12px;
+    display: none;
+}
+
+.mob-top_menu > li.has_drop.opened > ul {
+    display: block;
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: auto;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--accent-color-4);
+}
+
+.reservation_name {
+    font-size: 14px;
+    text-align: center;
+    color: var(--base-color-6);
+    margin-bottom: 10px;
+}
+
+.reservation_phones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reservation_phones a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 5px 12px 5px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.reservation_phones a .icon {
+    margin-right: 10px;
+}
+
+.reservation .btn {
+    min-width: 246px;
+}
+
+.mob-menu_email {
+    font-size: 14px;
+    color: var(--accent-color-1);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.mob-menu_email .icon {
+    fill: var(--accent-color-1);
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.black {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(39, 53, 47, 0.7);
+    backdrop-filter: blur(5px);
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+}
+
+.black.hidden {
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.reservation-popup {
+    font-size: 16px;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 16px 16px 16px;
+    width: 100%;
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+    background-color: var(--accent-color-7);
+    border-top: 1px solid var(--accent-color-4);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.reservation-popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.reservation-popup_name {
+    text-align: center;
+    font-size: 14px;
+    color: var(--base-color-6);
+    margin-bottom: 16px;
+}
+
+.reservation-popup_phones {
+    margin-bottom: 25px;
+}
+
+.reservation-popup_phones li {
+    display: flex;
+    justify-content: center;
+}
+
+.reservation-popup_phones li + li {
+    margin-top: 16px;
+}
+
+.reservation-popup_phones a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservation-popup_phones a .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
 /*HEADER*/

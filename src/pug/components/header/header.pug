@@ -1,3 +1,104 @@
+include ../../ui/icon/icon
+include ../../ui/btn/btn
+
+- let citesList = ['Трускавець', 'Східниця', 'Моршин', 'Станів', 'Закарпаття', 'Хмільник', 'Миргород', 'Карпати'];
+
 mixin header()
     header.site_header
-        span site header
+        div.top_header
+            div.centre
+                a(href="#").top_mob-logo
+                    img(src="./images/header-mob-logo.svg" width=36 height=36)
+                div.top_header-text
+                    a(href="#").site_name="vsisanatorii.com.ua"
+                    span.site_name-subtitle="Всі санаторії"
+                a(href="#").top_header-btn.open-mob_phones="phones btn"
+                    +icon('phone', 'phone_icon')
+                    +icon('close', 'close_icon')
+                a(href="#").top_header-btn.open-mob_menu="mob menu btn"
+                    +icon('menu', 'menu_icon')
+                    +icon('close', 'close_icon')
+            div.mobile_menu
+                div.mobile-change_lang
+                    a(href="#").active
+                        +icon('ua')
+                        span="Українська"
+                    a(href="#")
+                        span="Російська"
+                ul.mob-top_menu
+                    li
+                        a(href="#")
+                            span="Головна"
+                    li.has_drop
+                        a(href="#")
+                            sapn="Санаторії"
+                        ul
+                            each val, idx in citesList
+                                li
+                                    if idx === 2
+                                        a(href="#").active
+                                            span=val
+                                    else
+                                        a(href="#")
+                                            span=val
+                    li
+                        a(href="#").active
+                            span="Блог"
+                    li
+                        a(href="#")
+                            span="Новини"
+                div.reservation
+                    span.reservation_name="Відділ бронювання"
+                    ul.reservation_phones
+                        li
+                            a(href="#")
+                                +icon('viber')
+                                span="+38 (097) 05 77 388"
+                        li
+                            a(href="#")
+                                +icon('vodafone')
+                                span="+38 (066) 67 91 174"
+                        li
+                            a(href="#")
+                                +icon('phone')
+                                span="+38 (066) 67 91 174"
+                    +btn({
+                        name: 'Замовити дзвінок'
+                    })
+                a(href="#").mob-menu_email
+                    +icon('email')
+                    span="info@vsisanatorii.com.ua"
+            div.reservation-popup
+                span.reservation-popup_name="Відділ бронювання"
+                ul.reservation-popup_phones
+                    li
+                        a(href="#")
+                            +icon('viber')
+                            span="+38 (097) 05 77 388"
+                    li
+                        a(href="#")
+                            +icon('vodafone')
+                            span="+38 (066) 67 91 174"
+                    li
+                        a(href="#")
+                            +icon('phone')
+                            span="+38 (066) 67 91 174"
+                +btn({
+                    name: 'Замовити дзвінок',
+                    size: 'big'
+                })
+
+        div.mobile_catalog
+            div.centre
+                a(href="#").mob_catalog-gtn
+                    +icon('mob-catalog')
+                    span="Каталог санаторіїв"
+                ul.mobile_catalog-list
+                    each val, idx in citesList
+                        li
+                            if idx === 2
+                                a(href="#").active
+                                    span=val
+                            else
+                                a(href="#")
+                                    span=val

@@ -5,7 +5,7 @@ BODY, HTML {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.4;
     width: 100%;
     min-width: 360px;
     height: 100%;
@@ -17,6 +17,10 @@ body {
     flex-direction: column;
     width: 100%;
     background-color: var(--site-bg-color);
+}
+
+body.overflow {
+    overflow: hidden;
 }
 
 main {
@@ -107,7 +111,7 @@ textarea::placeholder {
 }
 
 a {
-    color: var(--link-color);
+    color: var(--accent-color-1);
 }
 
 a:hover {
@@ -115,7 +119,7 @@ a:hover {
 }
 
 article a {
-    color: var(--link-color);
+    color: var(--accent-color-1);
     text-decoration: none;
     border-bottom: 1px solid var(--border-color);
     transition: 0.3s;
@@ -203,13 +207,7 @@ article > * {
     margin: 0 auto;
     padding: 0 16px;
     width: 100%;
-    max-width: 1300px;
-}
-
-.icon {
-    width: 20px;
-    height: 20px;
-    fill: var(--icon-color);
+    max-width: 1332px;
 }
 
 .close_btn {
@@ -261,6 +259,17 @@ article > * {
 
 .hidden {
     display: none !important;
+}
+
+.site_shadow-style {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(39, 53, 47, 0.70);
+    backdrop-filter: blur(5px);
 }
 
 /*BASE*/

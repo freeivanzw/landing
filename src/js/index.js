@@ -1,4 +1,7 @@
 $(function () {
+    var $black = $('.black');
+
+
     jQuery.fn.dropdown = function (options) {
 
         var settings = $.extend({
@@ -97,6 +100,81 @@ $(function () {
             });
         });
     };
+
+    function checkPositionHeader () {
+        const headerHeight = $('.site_header').outerHeight();
+        const fixedHeaderHeight = $('.top_header').outerHeight();
+
+        if ( $(window).scrollTop() + fixedHeaderHeight > headerHeight) {
+            $('.top_header').addClass('shadow');
+        } else {
+            $('.top_header').removeClass('shadow');
+        }
+    }
+
+    checkPositionHeader();
+
+    $(document).on('scroll', checkPositionHeader);
+
+    $('.open-mob_menu').on('click', function (e) {
+        e.preventDefault();
+
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $('body').removeClass('overflow');
+            $('.mobile_menu').removeClass('active');
+            $black.addClass('hidden');
+        } else {
+            $(this).addClass('active');
+            $('body').addClass('overflow');
+            $('.mobile_menu').addClass('active');
+            $black.removeClass('hidden');
+        }
+    })
+
+    $black.on('click', function () {
+        $('body').removeClass('overflow');
+        $('.open-mob_menu').removeClass('active');
+        $('.mobile_menu').removeClass('active');
+        $black.addClass('hidden');
+    })
+
+    $('.mob_catalog-gtn').on('click', function (e) {
+        e.preventDefault();
+
+        $('.mobile_catalog').toggleClass('active');
+    })
+
+    $('.mob-top_menu').on('click', 'a', function (e) {
+        if ($(this).closest('li').hasClass('has_drop')) {
+            e.preventDefault();
+
+            $(this).closest('li').toggleClass('opened');
+        }
+    })
+
+    $('.open-mob_phones').on('click', function (e) {
+        e.preventDefault();
+
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $('body').removeClass('overflow');
+            $('.reservation-popup').removeClass('active');
+            $black.addClass('hidden');
+        } else {
+            $(this).addClass('active');
+            $('body').addClass('overflow');
+            $('.reservation-popup').addClass('active');
+            $black.removeClass('hidden');
+        }
+    })
+
+    $black.on('click', function () {
+        $('.open-mob_phones').removeClass('active');
+        $('body').removeClass('overflow');
+        $('.reservation-popup').removeClass('active');
+        $black.addClass('hidden');
+    })
 
     $('.test_slider').slick();
     $('.order_payment').dropdown();

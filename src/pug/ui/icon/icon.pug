@@ -1,0 +1,6 @@
+mixin icon(icon, className)
+    - let iconUrl = './images/sprite.svg#' + icon
+    - let classes = ['icon'];
+    - if (className) { classes.push(className) }
+    svg(class=classes.join(' '))
+        use(xlink:href=iconUrl)
