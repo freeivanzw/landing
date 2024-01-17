@@ -2,15 +2,11 @@
 @import "services/fonts";
 @import "services/variables";
 @import "services/reset";
-@import "services/base";
 /* -------- PLUGINS -------- */
 @import "plugins/slick";
 /* -------- UI -------- */
-@import "../../pug/ui/btn/btn";
-@import "../../pug/ui/dropdown/dropdown";
-@import "../../pug/ui/styled_input/styled_input";
-@import "../../pug/ui/icon/icon";
+@import "services/base";
 /* -------- COMPONENTS -------- */
-@import "../../pug/components/header/header";
-@import "../../pug/components/footer/footer";
+@import "components/header/header";
+@import "components/footer/footer";
 

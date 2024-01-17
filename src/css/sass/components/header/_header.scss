@@ -1,14 +1,14 @@
-/*HEADER*/
+/*SITE HEADER*/
 .site_header {
     width: 100%;
+    margin-bottom: 20px;
     padding: 56px 0 10px 0;
     background-color: var(--base-color-1);
     box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.08);
 }
 
-.site_header > .centre {
-    display: flex;
-    flex-direction: column;
+.header_info-row {
+    display: none;
 }
 
 .top_header {
@@ -31,7 +31,7 @@
 
 .top_header > .centre {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .top_mob-logo {
@@ -41,7 +41,15 @@
     height: 36px;
 }
 
+.top_mob-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .top_header-text {
+    text-decoration: none;
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
@@ -120,10 +128,12 @@
     opacity: 0;
 }
 
+.top_header .reservation {
+    display: none;
+}
 
-
-.mobile_catalog {
-
+.top_header .request_call {
+    display: none;
 }
 
 .mob_catalog-gtn {
@@ -138,7 +148,7 @@
     position: relative;
 }
 
-.mobile_catalog.active .mob_catalog-gtn {
+.top_catalog.active .mob_catalog-gtn {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -170,17 +180,17 @@
     transform: translateY(-50%) rotate(45deg);
 }
 
-.mobile_catalog.active .mob_catalog-gtn::before {
+.top_catalog.active .mob_catalog-gtn::before {
     transform-origin: top;
     transform: translateY(-50%) rotate(45deg);
 }
 
-.mobile_catalog.active .mob_catalog-gtn::after {
+.top_catalog.active .mob_catalog-gtn::after {
     transform-origin: top;
     transform: translateY(-50%) rotate(-45deg);
 }
 
-.mobile_catalog-list {
+.top_catalog-list {
     color: var(--base-color-1);
     display: none;
     flex-direction: column;
@@ -190,19 +200,19 @@
     border-bottom-right-radius: var(--border-radius);
 }
 
-.mobile_catalog.active .mobile_catalog-list {
+.top_catalog.active .top_catalog-list {
     display: flex;
 }
 
-.mobile_catalog-list li {
+.top_catalog-list li {
     display: flex;
 }
 
-.mobile_catalog-list li + li {
+.top_catalog-list li + li {
     border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.mobile_catalog-list a {
+.top_catalog-list a {
     text-decoration: none;
     font-size: 14px;
     text-transform: uppercase;
@@ -212,12 +222,12 @@
     color: var(--base-color-1);
 }
 
-.mobile_catalog-list a span {
+.top_catalog-list a span {
     display: block;
 
 }
 
-.mobile_catalog-list > li> a.active > span {
+.top_catalog-list > li> a.active > span {
     color: var(--additional-4);
     border-bottom: 1px solid var(--additional-4)
 }
@@ -374,7 +384,7 @@
     font-size: 14px;
     text-align: center;
     color: var(--base-color-6);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .reservation_phones {
@@ -396,6 +406,7 @@
 
 .reservation_phones a .icon {
     margin-right: 10px;
+    fill: var(--accent-color-1);
 }
 
 .reservation .btn {
@@ -498,4 +509,4 @@
     margin-right: 10px;
 }
 
-/*HEADER*/
+/*SITE HEADER*/

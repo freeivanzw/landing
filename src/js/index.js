@@ -142,7 +142,7 @@ $(function () {
     $('.mob_catalog-gtn').on('click', function (e) {
         e.preventDefault();
 
-        $('.mobile_catalog').toggleClass('active');
+        $('.top_catalog').toggleClass('active');
     })
 
     $('.mob-top_menu').on('click', 'a', function (e) {
@@ -174,6 +174,12 @@ $(function () {
         $('body').removeClass('overflow');
         $('.reservation-popup').removeClass('active');
         $black.addClass('hidden');
+    })
+
+    $('.selected_lang').on('click', function (e) {
+        e.preventDefault();
+
+        $(this).closest('.toggle_lang-deck').toggleClass('active');
     })
 
     $('.test_slider').slick();
