@@ -2,6 +2,9 @@
 
 @import "components/header/header-adaptive";
 @import "components/footer/footer-adaptive";
+@import "components/search-box/search-box-adaptive";
+@import "components/catalog-2-3lvl/catalog-2-3lvl-adaptive";
+@import "components/last-news/last-news-adaptive";
 
 
 @media only screen and (min-width : 480px)  {
@@ -10,6 +13,9 @@
     /* -------- COMPONENTS -------- */
     @include header-480;
     @include footer-480;
+    @include search-box-480;
+    @include catalog-2-3lvl-480;
+    @include last-news-480;
 }
 
 @media only screen and (min-width : 640px)  {
@@ -18,6 +24,9 @@
     /* -------- COMPONENTS -------- */
     @include header-640;
     @include footer-640;
+    @include search-box-640;
+    @include catalog-2-3lvl-640;
+    @include last-news-640;
 }
 
 @media only screen and (min-width : 768px)  {
@@ -26,6 +35,9 @@
     /* -------- COMPONENTS -------- */
     @include header-768;
     @include footer-768;
+    @include search-box-768;
+    @include catalog-2-3lvl-768;
+    @include last-news-768;
 }
 
 @media only screen and (min-width : 1024px) {
@@ -34,6 +46,9 @@
     /* -------- COMPONENTS -------- */
     @include header-1024;
     @include footer-1024;
+    @include search-box-1024;
+    @include catalog-2-3lvl-1024;
+    @include last-news-1024;
 }
 
 @media only screen and (min-width : 1332px) {
@@ -43,4 +58,7 @@
 
     @include header-1332;
     @include footer-1332;
+    @include search-box-1332;
+    @include catalog-2-3lvl-1332;
+    @include last-news-1332;
 }

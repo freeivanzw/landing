@@ -182,6 +182,51 @@ $(function () {
         $(this).closest('.toggle_lang-deck').toggleClass('active');
     })
 
+
+    $('.catalog_2-3lvl').on('click', 'a', function (e) {
+        if ($(window).width() >= 1024 ) {
+            return e;
+        }
+
+        if ($(this).parent('li').hasClass('has_drop')) {
+            e.preventDefault();
+
+            $(this).parent('li').toggleClass('active')
+        }
+    })
+
+    $('.last_news-slider').each(function () {
+        if ($(this).find('.last_news-item').length > 1) {
+            $(this).slick({
+                dots: true,
+                variableWidth: true,
+                arrows: false,
+                infinite: false,
+                slidesToShow: 1,
+                mobileFirst: true,
+                responsive: [
+                    {
+                        breakpoint: 590,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 880,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: "unslick"
+                    },
+                ]
+            });
+        }
+    })
+
+
     $('.test_slider').slick();
     $('.order_payment').dropdown();
 })

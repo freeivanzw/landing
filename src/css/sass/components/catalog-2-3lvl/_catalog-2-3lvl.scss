@@ -1,0 +1,114 @@
+/*CATALOG 2-3 LVL*/
+
+.catalog_2-3lvl {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 42px;
+}
+
+.catalog_2-3lvl > li + li {
+    margin-top: 5px;
+}
+
+.catalog_2-3lvl > li > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+    display: block;
+    padding: 10px;
+    background-color: var(--accent-color-5);
+    border-radius: var(--border-radius);
+    position: relative;
+}
+
+.catalog_2-3lvl > li.has_drop > a {
+    padding-right: 26px;
+}
+
+.catalog_2-3lvl > li.has_drop.active > a {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.catalog_2-3lvl > li.has_drop > a::before,
+.catalog_2-3lvl > li.has_drop > a::after {
+    content: "";
+    width: 1px;
+    height: 8px;
+    background-color: var(--accent-color-1);
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform-origin: bottom;
+    transition: 0.3s;
+}
+
+.catalog_2-3lvl > li.has_drop > a::before {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.catalog_2-3lvl > li.has_drop > a::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+
+.catalog_2-3lvl > li.has_drop.active > a::before {
+    transform: translateY(-50%) rotate(45deg);
+    transform-origin: top;
+}
+
+.catalog_2-3lvl > li.has_drop.active > a::after {
+    transform: translateY(-50%) rotate(-45deg);
+    transform-origin: top;
+}
+
+.catalog_2-3lvl > li > ul {
+    display: none;
+    flex-direction: column;
+    margin-bottom: 16px;
+    background-color: var(--base-color-1);
+    border-left: 1px solid var(--accent-color-5);
+    border-right: 1px solid var(--accent-color-5);
+}
+
+.catalog_2-3lvl > li.has_drop.active > ul {
+    display: flex;
+}
+
+.catalog_2-3lvl > li > ul > li {
+    border-bottom: 1px solid var(--accent-color-5);
+}
+
+.catalog_2-3lvl > li > ul > li > a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: var(--base-color-7);
+    padding: 10px;
+}
+
+.catalog_2-3lvl > li > ul > li > a span.name {
+    font-size: 14px;
+    line-height: 22px;
+    flex: 1 1 auto;
+    text-align: start;
+    padding-right: 5px;
+}
+
+.catalog_2-3lvl > li > ul > li > a span.status {
+    font-weight: 500;
+    font-size: 10px;
+    padding: 2px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin: 2px 0 2px 4px;
+}
+
+/*CATALOG 2-3 LVL*/

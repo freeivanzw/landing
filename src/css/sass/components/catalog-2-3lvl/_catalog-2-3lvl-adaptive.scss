@@ -1,0 +1,63 @@
+@mixin catalog-2-3lvl-480 {
+    /*CATALOG 2-3 LVL*/
+
+    /*CATALOG 2-3 LVL*/
+}
+
+@mixin catalog-2-3lvl-640 {
+    /*CATALOG 2-3 LVL*/
+
+    /*CATALOG 2-3 LVL*/
+}
+
+@mixin catalog-2-3lvl-768 {
+    /*CATALOG 2-3 LVL*/
+
+    /*CATALOG 2-3 LVL*/
+}
+
+@mixin catalog-2-3lvl-1024 {
+    /*CATALOG 2-3 LVL*/
+
+    .catalog_2-3lvl > li + li {
+        margin-top: 20px;
+    }
+
+    .catalog_2-3lvl > li > ul {
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    .catalog_2-3lvl > li > a {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+
+    .catalog_2-3lvl > li.has_drop > a {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        padding-right: 16px;
+    }
+
+    .catalog_2-3lvl > li.has_drop > a::before,
+    .catalog_2-3lvl > li.has_drop > a::after {
+        display: none;
+    }
+
+    .catalog_2-3lvl > li > ul > li > a {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+
+    .catalog_2-3lvl > li > ul > li > a span.name {
+        font-size: 16px;
+    }
+
+    /*CATALOG 2-3 LVL*/
+}
+
+@mixin catalog-2-3lvl-1332 {
+    /*CATALOG 2-3 LVL*/
+
+    /*CATALOG 2-3 LVL*/
+}

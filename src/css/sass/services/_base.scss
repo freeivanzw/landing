@@ -199,6 +199,39 @@ h4,
     margin-bottom: 10px;
 }
 
+.pattern_tittle {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+
+.pattern_tittle .H2 {
+    flex: 0 0 auto;
+    max-width: calc(100% - 32px);
+    margin-bottom: 0;
+    padding-right: 32px;
+}
+
+.pattern_box {
+    flex: 1 1 auto;
+    min-width: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: 32px;
+    overflow: hidden;
+}
+
+.pattern_img {
+    flex: 0 0 32px;
+    height: 32px;
+    margin: 0 0 0 5px;
+    background-image: url("../images/pattern.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 article > * {
     margin-bottom: 22px;
 }

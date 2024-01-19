@@ -1,3 +1,133 @@
 /*SITE FOOTER*/
 
+.site_footer {
+    padding: 20px 0 0 0;
+    background-color: var(--base-color-1);
+}
+
+.bottom_inner {
+    margin-bottom: 66px;
+}
+
+.bottom_menu {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--accent-color-4);
+}
+
+.bottom_menu ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 10px;
+}
+
+.bottom_menu ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.bottom_menu ul a:hover {
+    color: var(--accent-color-1);
+}
+
+.bottom_copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rest_treatment {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+    color: var(--base-color-7);
+}
+
+.rest_treatment a {
+    color: var(--base-color-7);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.rest_treatment a:hover {
+    color: var(--accent-color-1);
+    text-decoration: underline;
+}
+
+.site_footer .contract {
+    font-size: 12px;
+    color: var(--accent-color-2);
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+
+.site_footer .contract a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.site_footer .contract a:hover {
+    text-decoration: underline;
+}
+
+.sufix-link {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--accent-color-2);
+    text-align: center;
+    line-height: 1.3;
+}
+
+.sufix-link a {
+    text-decoration: none;
+    color: var(--accent-color-2);
+    transition: 0.3s;
+}
+
+.sufix-link a:hover {
+    text-decoration: underline;
+}
+
+.reservation_box {
+    font-size: 12px;
+    color: var(--base-color-1);
+    background-color: var(--accent-color-2);
+    padding: 10px 0 12px 0;
+}
+
+.reservation_box .centre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.reservation-title {
+    margin-bottom: 10px;
+}
+
+.reservation-item {
+    display: inline-block;
+}
+
+.reservation-item a {
+    text-decoration: none;
+    color: var(--base-color-1);
+    font-weight: 500;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.reservation-item a:hover {
+    opacity: 0.75;
+}
+
 /*SITE FOOTER*/
+

@@ -7,6 +7,12 @@
   /*SITE HEADER*/
   /*SITE FOOTER*/
   /*SITE FOOTER*/
+  /*SEARCH BOX*/
+  /*SEARCH BOX*/
+  /*CATALOG 2-3 LVL*/
+  /*CATALOG 2-3 LVL*/
+  /*LAST NEWS*/
+  /*LAST NEWS*/
 }
 @media only screen and (min-width: 640px) {
   /* -------- UI -------- */
@@ -16,7 +22,21 @@
   /*SITE HEADER*/
   /*SITE HEADER*/
   /*SITE FOOTER*/
+  .bottom_menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+
   /*SITE FOOTER*/
+  /*SEARCH BOX*/
+  /*SEARCH BOX*/
+  /*CATALOG 2-3 LVL*/
+  /*CATALOG 2-3 LVL*/
+  /*LAST NEWS*/
+  /*LAST NEWS*/
 }
 @media only screen and (min-width: 768px) {
   /* -------- UI -------- */
@@ -343,11 +363,92 @@
 
   /*SITE HEADER*/
   /*SITE FOOTER*/
+  .bottom_inner {
+    margin-bottom: 20px;
+  }
+
+  .bottom_menu ul a {
+    font-size: 16px;
+  }
+
+  .bottom_copy {
+    flex-direction: row;
+  }
+
+  .rest_treatment {
+    font-size: 14px;
+    flex: 0 1 33.33%;
+    text-align: start;
+    margin-bottom: 0;
+  }
+
+  .site_footer .contract {
+    font-size: 14px;
+    flex: 0 1 33.33%;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0 5px;
+  }
+
+  .sufix-link {
+    font-size: 14px;
+    flex: 0 1 33.33%;
+    text-align: end;
+  }
+
   /*SITE FOOTER*/
+  /*SEARCH BOX*/
+  .search_box {
+    padding: 64px 74px 86px 74px;
+    margin-bottom: 80px;
+  }
+
+  .search_box .H1 {
+    margin-bottom: 35px;
+  }
+
+  .search_row {
+    flex-direction: row;
+  }
+
+  .search_row input[type=text] {
+    height: 60px;
+    flex: 1 1 auto;
+  }
+
+  .search_row .btn {
+    margin: 0 0 0 -6px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  /*SEARCH BOX*/
+  /*CATALOG 2-3 LVL*/
+  /*CATALOG 2-3 LVL*/
+  /*LAST NEWS*/
+  /*LAST NEWS*/
 }
 @media only screen and (min-width: 1024px) {
   /* -------- UI -------- */
   /*BASE*/
+  .centre.site_grid {
+    display: flex;
+  }
+
+  .centre.site_grid > .left_menu {
+    flex: 0 0 300px;
+    width: 300px;
+  }
+
+  .centre.site_grid > .content {
+    flex: 1 1 auto;
+    padding-left: 40px;
+  }
+
+  .pattern_tittle {
+    margin-bottom: 30px;
+  }
+
   /*BASE*/
   /* -------- COMPONENTS -------- */
   /*SITE HEADER*/
@@ -372,7 +473,124 @@
 
   /*SITE HEADER*/
   /*SITE FOOTER*/
+  .reservation_box .centre {
+    justify-content: center;
+  }
+
+  .reservation_box {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+
+  .reservation-title {
+    margin-bottom: 0;
+  }
+
+  .reservation-title {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .reservation-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .reservation-item + .reservation-item {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
   /*SITE FOOTER*/
+  /*SEARCH BOX*/
+  .centre.site_grid .left_menu .search_box {
+    display: none;
+  }
+
+  .centre.site_grid .content .search_box {
+    display: flex;
+  }
+
+  /*SEARCH BOX*/
+  /*CATALOG 2-3 LVL*/
+  .catalog_2-3lvl > li + li {
+    margin-top: 20px;
+  }
+
+  .catalog_2-3lvl > li > ul {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .catalog_2-3lvl > li > a {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+
+  .catalog_2-3lvl > li.has_drop > a {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-right: 16px;
+  }
+
+  .catalog_2-3lvl > li.has_drop > a::before,
+.catalog_2-3lvl > li.has_drop > a::after {
+    display: none;
+  }
+
+  .catalog_2-3lvl > li > ul > li > a {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+
+  .catalog_2-3lvl > li > ul > li > a span.name {
+    font-size: 16px;
+  }
+
+  /*CATALOG 2-3 LVL*/
+  /*LAST NEWS*/
+  .left_menu .last_news {
+    display: flex;
+  }
+
+  .content .last_news {
+    display: none;
+  }
+
+  .last_news .pattern_tittle .H2 {
+    font-size: 24px;
+  }
+
+  .last_news-slider:not(.slick-initialized) .last_news-item {
+    flex: 0 1 auto;
+    margin-right: 0;
+  }
+
+  .last_news-slider {
+    width: 100%;
+    margin-right: 0;
+    flex-direction: column;
+  }
+
+  .last_news-item {
+    flex: 0 1 auto;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .last_news-item figcaption {
+    padding: 12px 16px;
+  }
+
+  .last_news-item time {
+    font-size: 14px;
+  }
+
+  .last_news-title {
+    font-size: 16px;
+  }
+
+  /*LAST NEWS*/
 }
 @media only screen and (min-width: 1332px) {
   /* -------- UI -------- */
@@ -383,4 +601,10 @@
   /*SITE HEADER*/
   /*FOOTER*/
   /*FOOTER*/
+  /*SEARCH BOX*/
+  /*SEARCH BOX*/
+  /*CATALOG 2-3 LVL*/
+  /*CATALOG 2-3 LVL*/
+  /*LAST NEWS*/
+  /*LAST NEWS*/
 }

@@ -6,12 +6,52 @@
 
 @mixin footer-640 {
     /*SITE FOOTER*/
+    .bottom_menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+    }
+
 
     /*SITE FOOTER*/
 }
 
 @mixin footer-768 {
     /*SITE FOOTER*/
+    .bottom_inner {
+        margin-bottom: 20px;
+    }
+
+    .bottom_menu ul a {
+        font-size: 16px;
+    }
+
+    .bottom_copy {
+        flex-direction: row;
+    }
+
+    .rest_treatment {
+        font-size: 14px;
+        flex: 0 1 33.33%;
+        text-align: start;
+        margin-bottom: 0;
+    }
+
+    .site_footer .contract {
+        font-size: 14px;
+        flex: 0 1 33.33%;
+        text-align: center;
+        margin-bottom: 0;
+        padding: 0 5px;
+    }
+
+    .sufix-link {
+        font-size: 14px;
+        flex: 0 1 33.33%;
+        text-align: end;
+    }
 
     /*SITE FOOTER*/
 }
@@ -19,6 +59,32 @@
 @mixin footer-1024 {
     /*SITE FOOTER*/
 
+    .reservation_box .centre {
+        justify-content: center;
+    }
+
+    .reservation_box {
+        font-size: 18px;
+        padding: 12px 0;
+    }
+
+    .reservation-title {
+        margin-bottom: 0;
+    }
+
+    .reservation-title {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .reservation-item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .reservation-item + .reservation-item {
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+    }
     /*SITE FOOTER*/
 }
 

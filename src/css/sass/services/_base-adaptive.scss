@@ -60,6 +60,23 @@
 
 @mixin base-1024 {
     /*BASE*/
+    .centre.site_grid {
+        display: flex;
+    }
+
+    .centre.site_grid > .left_menu {
+        flex: 0 0 300px;
+        width: 300px;
+    }
+
+    .centre.site_grid > .content {
+        flex: 1 1 auto;
+        padding-left: 40px;
+    }
+
+    .pattern_tittle {
+        margin-bottom: 30px;
+    }
 
     /*BASE*/
 }
