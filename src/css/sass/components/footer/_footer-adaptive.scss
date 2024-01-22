@@ -85,6 +85,30 @@
     .reservation-item + .reservation-item {
         border-left: 1px solid rgba(255, 255, 255, 0.3);
     }
+
+    @media (hover: hover) {
+
+        .bottom_menu ul a:hover {
+            color: var(--accent-color-1);
+        }
+
+        .rest_treatment a:hover {
+            color: var(--accent-color-1);
+            text-decoration: underline;
+        }
+
+        .site_footer .contract a:hover {
+            text-decoration: underline;
+        }
+
+        .sufix-link a:hover {
+            text-decoration: underline;
+        }
+
+        .reservation-item a:hover {
+            opacity: 0.75;
+        }
+    }
     /*SITE FOOTER*/
 }
 

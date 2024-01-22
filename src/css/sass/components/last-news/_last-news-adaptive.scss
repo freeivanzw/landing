@@ -28,7 +28,7 @@
     }
 
     .last_news .pattern_tittle .H2 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .last_news-slider:not(.slick-initialized) .last_news-item {
@@ -37,9 +37,11 @@
     }
 
     .last_news-slider {
-        width: 100%;
-        margin-right: 0;
         flex-direction: column;
+        margin: -6px -12px -15px -12px;
+        padding: 6px 12px 15px 12px;
+        width: calc(100% + 24px);
+        max-width: calc(100% + 24px);
     }
 
     .last_news-item {
@@ -47,6 +49,8 @@
         width: 100%;
         margin-right: 0;
         margin-bottom: 16px;
+        box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.0);
+        transition: 0.3s;
     }
 
     .last_news-item figcaption {
@@ -59,6 +63,16 @@
 
     .last_news-title {
         font-size: 16px;
+    }
+
+    @media (hover: hover) {
+        .last_news-title:hover {
+            color: var(--accent-color-1);
+        }
+
+        .last_news-item:hover {
+            box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.08);
+        }
     }
     /*LAST NEWS*/
 }

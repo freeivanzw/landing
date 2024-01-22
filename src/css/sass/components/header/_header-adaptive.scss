@@ -39,9 +39,6 @@
         transition: 0.3s;
     }
 
-    .header_info-email:hover {
-        color: var(--text-color);
-    }
 
     .header_info-email .icon {
         fill: var(--accent-color-1);
@@ -49,9 +46,7 @@
         transition: 0.3s;
     }
 
-    .header_info-email:hover .icon {
-        fill: var(--text-color)
-    }
+
 
     .top_menu-1lvl {
         display: flex;
@@ -71,10 +66,6 @@
         transition: 0.3s;
     }
 
-    .top_menu-1lvl a:hover {
-        color: var(--accent-color-1)
-    }
-
     .toggle_lang-deck {
         position: relative;
     }
@@ -89,10 +80,6 @@
         padding-right: 28px;
         position: relative;
         transition: 0.3s;
-    }
-
-    .selected_lang:hover {
-        color: var(--accent-color-1)
     }
 
     .selected_lang .icon {
@@ -161,6 +148,7 @@
         color: var(--text-color);
         display: flex;
         align-items: center;
+        transition: 0.3s;
     }
 
     .top_header {
@@ -212,10 +200,6 @@
         transition: 0.3s;
     }
 
-    .top_header .reservation .reservation_phones a:hover {
-        color: var(--accent-color-1);
-    }
-
     .top_header .request_call {
         white-space: nowrap;
         display: flex;
@@ -257,10 +241,6 @@
         color: var(--text-color);
         padding: 0;
         transition: 0.3s;
-    }
-
-    .top_catalog-list a:hover {
-        color: var(--accent-color-1)
     }
 
     .top_catalog-list > li > a > span {
@@ -315,6 +295,36 @@
 
     .top_catalog-list a {
         font-size: 16px;
+    }
+
+    @media (hover: hover) {
+        .header_info-email:hover {
+            color: var(--text-color);
+        }
+
+        .header_info-email:hover .icon {
+            fill: var(--text-color)
+        }
+
+        .top_menu-1lvl a:hover {
+            color: var(--accent-color-1)
+        }
+
+        .selected_lang:hover {
+            color: var(--accent-color-1)
+        }
+
+        .top_header .reservation .reservation_phones a:hover {
+            color: var(--accent-color-1);
+        }
+
+        .top_catalog-list a:hover {
+            color: var(--accent-color-1)
+        }
+
+        .toggle_lang-list a:hover {
+            color: var(--accent-color-1);
+        }
     }
     /*SITE HEADER*/
 }

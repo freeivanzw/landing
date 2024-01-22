@@ -21,6 +21,7 @@
     background-color: var(--accent-color-5);
     border-radius: var(--border-radius);
     position: relative;
+    transition: 0.3s;
 }
 
 .catalog_2-3lvl > li.has_drop > a {
@@ -89,6 +90,12 @@
     text-decoration: none;
     color: var(--base-color-7);
     padding: 10px;
+    transition: 0.3s;
+}
+
+.catalog_2-3lvl > li > ul > li > a:active {
+    color: var(--accent-color-1);
+    background-color: var(--accent-color-5);
 }
 
 .catalog_2-3lvl > li > ul > li > a span.name {

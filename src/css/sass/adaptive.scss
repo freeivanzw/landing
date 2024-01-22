@@ -5,6 +5,10 @@
 @import "components/search-box/search-box-adaptive";
 @import "components/catalog-2-3lvl/catalog-2-3lvl-adaptive";
 @import "components/last-news/last-news-adaptive";
+@import "components/search-left-menu/search-left-menu-adaptive";
+@import "components/grid-slider/grid-slider-adaptive";
+@import "components/main-article/main-article-adaptive";
+@import "components/read-more/read-more-adaptive";
 
 
 @media only screen and (min-width : 480px)  {
@@ -16,6 +20,10 @@
     @include search-box-480;
     @include catalog-2-3lvl-480;
     @include last-news-480;
+    @include search-left-menu-480;
+    @include grid-slider-480;
+    @include main-article-480;
+    @include read-more-480;
 }
 
 @media only screen and (min-width : 640px)  {
@@ -27,6 +35,10 @@
     @include search-box-640;
     @include catalog-2-3lvl-640;
     @include last-news-640;
+    @include search-left-menu-640;
+    @include grid-slider-640;
+    @include main-article-640;
+    @include read-more-640;
 }
 
 @media only screen and (min-width : 768px)  {
@@ -38,6 +50,10 @@
     @include search-box-768;
     @include catalog-2-3lvl-768;
     @include last-news-768;
+    @include search-left-menu-768;
+    @include grid-slider-768;
+    @include main-article-768;
+    @include read-more-768;
 }
 
 @media only screen and (min-width : 1024px) {
@@ -49,6 +65,10 @@
     @include search-box-1024;
     @include catalog-2-3lvl-1024;
     @include last-news-1024;
+    @include search-left-menu-1024;
+    @include grid-slider-1024;
+    @include main-article-1024;
+    @include read-more-1024;
 }
 
 @media only screen and (min-width : 1332px) {
@@ -61,4 +81,8 @@
     @include search-box-1332;
     @include catalog-2-3lvl-1332;
     @include last-news-1332;
+    @include search-left-menu-1332;
+    @include grid-slider-1332;
+    @include main-article-1332;
+    @include read-more-1332;
 }

@@ -218,7 +218,7 @@ $(function () {
                         }
                     },
                     {
-                        breakpoint: 1024,
+                        breakpoint: 1023,
                         settings: "unslick"
                     },
                 ]
@@ -226,6 +226,86 @@ $(function () {
         }
     })
 
+    $('.grid_slider-slick.one-row').each(function () {
+        let slidesCount = $(this).find('.grid_slider-slide').length;
+
+        let sliderSettings = {
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+            variableWidth: true,
+            arrows: false,
+            infinite: true,
+            slidesToShow: 1,
+            mobileFirst: true,
+            responsive: [
+                {
+                    breakpoint: 590,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: slidesCount <= 3 ? 'unslick' : {
+                        slidesToShow: 3,
+                        variableWidth: false,
+                    }
+                }
+            ]
+        }
+
+        $(this).slick(sliderSettings)
+    })
+
+    $('.grid_slider-slick.two-rows').each(function () {
+        let slidesCount = $(this).find('.grid_slider-slide').length;
+
+        let sliderSettingsMob = {
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+            variableWidth: true,
+            arrows: false,
+            infinite: true,
+            slidesToShow: 1,
+            mobileFirst: true,
+            rows: 1,
+            responsive: [
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 694,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                }
+            ]
+        }
+
+        let sliderSettingsDesk = {
+            autoplay: true,
+            autoplaySpeed: 3000,
+            rows: 2,
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+        }
+
+        if ($(window).width() < 768) {
+            $(this).slick(sliderSettingsMob);
+        } else if ($(window).width() >= 768 && slidesCount > 6) {
+            $(this).slick(sliderSettingsDesk);
+        }
+
+    })
 
     $('.test_slider').slick();
     $('.order_payment').dropdown();

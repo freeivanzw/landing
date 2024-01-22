@@ -38,6 +38,7 @@
     background-color: transparent;
     border: none;
     position: relative;
+    cursor: pointer;
 }
 
 .slick-dots button::before {
@@ -125,6 +126,7 @@
     font-size: 14px;
     line-height: 1.3;
     min-height: 66px;
+    transition: 0.3s;
 }
 
 .last_news-swipe {
