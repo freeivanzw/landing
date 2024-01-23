@@ -1,10 +1,14 @@
 /*MAIN ARTICLE*/
 .main_article {
-  margin-bottom: var(--section-bottom);
+    margin-bottom: var(--section-bottom);
 }
 
 .article_content > * {
-  margin-bottom: 22px;
+    margin-bottom: 22px;
 }
+
+//.main_article .pattern_tittle h1 {
+//    text-transform: unset;
+//}
 
 /*MAIN ARTICLE*/

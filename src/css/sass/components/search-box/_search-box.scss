@@ -8,6 +8,15 @@
     width: 100%;
 }
 
+.centre.site_grid .search_box {
+    width: calc(100% + 32px);
+    margin: 0 -16px 18px -16px;
+}
+
+.centre.site_grid .search_box:nth-child(1) {
+    margin-top: -20px;
+}
+
 .centre.site_grid .content .search_box {
     display: none;
 }
@@ -22,6 +31,10 @@
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+.centre.site_grid .search_box-bg {
+    border-radius: 0;
 }
 
 .search_box .H1 {

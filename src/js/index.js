@@ -307,6 +307,24 @@ $(function () {
 
     })
 
+    let lastPostScreen = $(window).scrollTop();
+    $(window).on('scroll', function () {
+
+        if (lastPostScreen > $(window).scrollTop() && $(window).scrollTop() > $(window).height()) {
+            $('.up').addClass('active');
+        } else {
+            $('.up').removeClass('active');
+        }
+
+        lastPostScreen = $(window).scrollTop();
+    })
+
+    $('.up').on('click', function (e) {
+        e.preventDefault();
+
+        $("html, body").stop().animate({scrollTop:0}, 500, 'swing');
+    })
+
     $('.test_slider').slick();
     $('.order_payment').dropdown();
 })

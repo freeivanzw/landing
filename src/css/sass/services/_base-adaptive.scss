@@ -1,4 +1,3 @@
-
 @mixin base-480 {
     /*BASE*/
 
@@ -7,7 +6,22 @@
 
 @mixin base-640 {
     /*BASE*/
-
+    .up  {
+        font-size: 10px;
+        text-transform: uppercase;
+        color: var(--accent-color-1);
+        text-align: center;
+        text-decoration: none;
+        padding-top: 21px;
+        width: 40px;
+        height: 40px;
+        bottom: 78px;
+        left: auto;
+        transform: unset;
+        right: 16px;
+        opacity: 1;
+        visibility: visible;
+    }
     /*BASE*/
 }
 
@@ -55,6 +69,11 @@
     }
     /*btn*/
 
+    .breadcrumbs {
+        margin-top: -25px;
+        margin-bottom: 40px;
+    }
+
     /*BASE*/
 }
 
@@ -81,103 +100,131 @@
 
     .pattern_tittle {
         margin-bottom: 30px;
+        align-items: flex-end;
     }
 
     .pattern_tittle .H2,
-    .pattern_tittle h1 {
+    .pattern_tittle h2 {
         font-size: 32px;
     }
 
-    @media (hover: hover) {
-
-        input[type=text]:hover,
-        input[type=email]:hover,
-        input[type=number]:hover,
-        input[type=password]:hover,
-        input[type=tel]:hover,
-        input[type=time]:hover,
-        textarea:hover {
-            background-color: var(--accent-color-7);
-        }
-
-        article a:hover {
-            color: var(--link-color-active)
-        }
-
-        a.sub_title:hover {
-            opacity: 0.7;
-        }
-
-        .close_btn:hover::before,
-        .close_btn:hover::after {
-            background-color: #EE3C30;;
-        }
-
-        .btn:hover {
-            color: var(--btn-text-hover);
-            background-color: var(--btn-bg-hover);
-            border-color: var(--btn-border-hover);
-        }
-
-        .btn.btn_outline:hover {
-            color: var(--btn-text-outline-hover);
-            background-color: var(--btn-bg-outline-hover);
-            border-color: var(--btn-border-outline-hover);
-        }
-
-        .dropdown_short:hover .drop_arrow {
-            background-color: var(--accent-color-7);
-        }
-
-        .dropdown:hover .overflow {
-            background-color: var(--accent-color-7);
-        }
-
-        .dropdown UL LI A:hover {
-            background-color: var(--accent-color-6);
-        }
-
-        .dropdown_short ul li a:hover {
-            background-color: #e6e6e6;
-            color: initial;
-        }
-
-        .dropdown_alt .drop_arrow:hover {
-            background-color: var(--main-active-color);
-        }
-
-        .dropdown_alt UL LI A:hover {
-            border-color: var(--accent-color-6);
-        }
-
-        .options_dropdown_list UL LI A:hover {
-            color: var(--base-color-9);
-        }
-
-        .options_dropdown_tile UL LI A:hover {
-            background-color: var(--accent-color-2);
-            color: var(--base-color-1);
-        }
-
-        .options_dropdown_tile UL LI.disabled a:hover {
-            background-color: var(--base-color-1);
-            color: var(--text-color);
-        }
-
-        .dropdown.filled:hover {
-            border-color: var(--accent-color-2);
-        }
-
-        .dropdown.filled:hover .overflow {
-            background-color: var(--accent-color-2);
-        }
+    .pattern_tittle h1,
+    .pattern_tittle .H1 {
+        font-size: 40px;
     }
+
+    .pattern_tittle h1 + .pattern_box,
+    .pattern_tittle .H1 + .pattern_box {
+        margin-bottom: 6px;
+    }
+
+    .pagination {
+        padding-top: 40px;
+    }
+
+    /* ------ hover ------ */
+    input[type=text]:hover,
+    input[type=email]:hover,
+    input[type=number]:hover,
+    input[type=password]:hover,
+    input[type=tel]:hover,
+    input[type=time]:hover,
+    textarea:hover {
+        background-color: var(--accent-color-7);
+    }
+
+    article a:hover {
+        color: var(--accent-color-1);
+    }
+
+    a.sub_title:hover {
+        opacity: 0.7;
+    }
+
+    .close_btn:hover::before,
+    .close_btn:hover::after {
+        background-color: #EE3C30;;
+    }
+
+    .btn:hover {
+        color: var(--btn-text-hover);
+        background-color: var(--btn-bg-hover);
+        border-color: var(--btn-border-hover);
+    }
+
+    .btn.btn_outline:hover {
+        color: var(--btn-text-outline-hover);
+        background-color: var(--btn-bg-outline-hover);
+        border-color: var(--btn-border-outline-hover);
+    }
+
+    .dropdown_short:hover .drop_arrow {
+        background-color: var(--accent-color-7);
+    }
+
+    .dropdown:hover .overflow {
+        background-color: var(--accent-color-7);
+    }
+
+    .dropdown UL LI A:hover {
+        background-color: var(--accent-color-6);
+    }
+
+    .dropdown_short ul li a:hover {
+        background-color: #e6e6e6;
+        color: initial;
+    }
+
+    .dropdown_alt .drop_arrow:hover {
+        background-color: var(--accent-color-1);
+    }
+
+    .dropdown_alt UL LI A:hover {
+        border-color: var(--accent-color-6);
+    }
+
+    .options_dropdown_list UL LI A:hover {
+        color: var(--base-color-9);
+    }
+
+    .options_dropdown_tile UL LI A:hover {
+        background-color: var(--accent-color-2);
+        color: var(--base-color-1);
+    }
+
+    .options_dropdown_tile UL LI.disabled a:hover {
+        background-color: var(--base-color-1);
+        color: var(--text-color);
+    }
+
+    .dropdown.filled:hover {
+        border-color: var(--accent-color-2);
+    }
+
+    .dropdown.filled:hover .overflow {
+        background-color: var(--accent-color-2);
+    }
+
+    .up:hover {
+        border-color: var(--accent-color-1);
+    }
+    .pagination ul a:hover {
+        background-color: var(--accent-color-5);
+    }
+
+    .breadcrumbs ul a:hover {
+        color: var(--accent-color-1);
+    }
+    /* ------ hover ------ */
 
     /*BASE*/
 }
 
 @mixin base-1332 {
     /*BASE*/
-
+    .up {
+        right: 50%;
+        transform: translateX(700px);
+    }
     /*BASE*/
 }

@@ -1,0 +1,125 @@
+/*RESORTS LIST*/
+
+.resorts_list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--section-bottom);
+}
+
+.resorts_list-rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.resort_item {
+    display: flex;
+    border: 1px solid var(--accent-color-4);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background-color: var(--site-bg-color);
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.0);
+    transition: 0.3s;
+}
+
+.resort_item + .resort_item {
+    margin-top: 6px;
+}
+
+.resort_item > .col:nth-child(1) {
+    flex: 0 0 120px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.resort_item-img {
+    display: flex;
+    margin-bottom: 16px;
+    height: 120px;
+}
+
+.resort_item-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 5px 5px;
+    object-fit: cover;
+}
+
+.resort_item .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+.resort_item .rating .star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+}
+
+.resort_item .rating .star img {
+    display: block;
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.resort_item .response-counter {
+    font-size: 12px;
+    color: var(--base-color-6);
+    text-align: center;
+}
+
+.resort_item > .col:nth-child(2) {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.resort_link {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent-color-1);
+    text-decoration: none;
+    margin-bottom: 18px;
+    transition: 0.3s;
+}
+
+.resort_preference {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+}
+
+.resort_preference li {
+    font-size: 12px;
+    color: var(--base-color-7);
+    margin: 0 6px 3px 0;
+}
+
+.resort_preference li + li::before {
+    content: "\2022";
+    margin-right: 6px;
+}
+
+.resort_description {
+    font-size: 12px;
+    color: var(--base-color-7);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 6px;
+}
+
+.resort_item > .col:nth-child(3) {
+    display: none;
+}
+
+/*RESORTS LIST*/

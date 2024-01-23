@@ -1,0 +1,70 @@
+@mixin popup-box-480 {
+    /*POPUP BOX*/
+
+    /*POPUP BOX*/
+}
+
+@mixin popup-box-640 {
+    /*POPUP BOX*/
+
+    /*POPUP BOX*/
+}
+
+@mixin popup-box-768 {
+    /*POPUP BOX*/
+    .popup_box {
+        border-top: none;
+        height: 100%;
+        top: 0;
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
+    .popup {
+        max-width: 480px;
+        padding: 40px 40px 50px 40px;
+        border-radius: var(--border-radius);
+        position: relative;
+        box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.35);
+    }
+
+    .popup.popup-thanks {
+        max-width: 400px;
+    }
+
+    .popup.popup-thanks .popup_text {
+        margin-bottom: 0;
+    }
+
+    .close_popup {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .popup_text {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .popup .styled_input {
+        margin-bottom: 16px;
+    }
+
+    /*POPUP BOX*/
+}
+
+@mixin popup-box-1024 {
+    /*POPUP BOX*/
+
+    /* ------ hover ------ */
+    /* ------ hover ------ */
+    /*POPUP BOX*/
+}
+
+@mixin popup-box-1332 {
+    /*POPUP BOX*/
+
+    /*POPUP BOX*/
+}

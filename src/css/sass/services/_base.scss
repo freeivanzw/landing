@@ -183,17 +183,25 @@ h4,
 
 .pattern_tittle {
     display: flex;
-    align-items: flex-end;
+    //align-items: flex-end;
     margin-bottom: 25px;
 }
 
 .pattern_tittle .H2,
-.pattern_tittle h1 {
+.pattern_tittle .H1,
+.pattern_tittle h1,
+.pattern_tittle h2 {
+    flex: 0 1 668px;
     font-size: 24px;
-    flex: 0 0 auto;
     max-width: calc(100% - 32px);
     margin-bottom: 0;
     padding-right: 32px;
+}
+
+.pattern_tittle h1,
+.pattern_tittle .H1 {
+    text-transform: uppercase;
+    font-size: 28px;
 }
 
 .pattern_box {
@@ -790,7 +798,158 @@ article > * {
 
 
 /*styled input*/
+.centre.site_grid {
+    overflow: hidden;
+}
 
+.up {
+    font-size: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--accent-color-4);
+    position: fixed;
+    bottom: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--base-color-1);
+    border-radius: 3px;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
 
+.up::before,
+.up::after {
+    content: "";
+    width: 1px;
+    height: 7px;
+    background-color: var(--accent-color-1);
+    position: absolute;
+    top: 11px;
+    left: 50%;
+    transform-origin: top;
+}
+
+.up::before {
+    transform: translateX(-50%) rotate(-45deg);
+}
+
+.up::after {
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.up.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.pagination ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination ul li {
+    margin: 0 2px;
+}
+
+.pagination ul span,
+.pagination ul a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--border-radius);
+    position: relative;
+    transition: 0.3s;
+}
+
+.pagination ul span.current {
+    background-color: var(--accent-color-5);
+}
+
+.pagination ul a.to-start::before,
+.pagination ul a.to-start::after,
+.pagination ul a.to-end::before,
+.pagination ul a.to-end::after,
+.pagination ul a.prev::before,
+.pagination ul a.next::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid var(--accent-color-1);
+    border-bottom: 1px solid var(--accent-color-1);
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.pagination ul a.to-start::before,
+.pagination ul a.to-end::before {
+    left: 11px;
+}
+
+.pagination ul a.to-start::after,
+.pagination ul a.to-end::after {
+    left: 18px;
+}
+
+.pagination ul a.next,
+.pagination ul a.to-end {
+    transform: rotate(180deg);
+}
+
+/* breadcrumbs */
+
+.breadcrumbs {
+    margin-top: -5px;
+    margin-bottom: 24px;
+}
+
+.breadcrumbs ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs ul a,
+.breadcrumbs ul span {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--base-color-7);
+    transition: 0.3s;
+}
+
+.breadcrumbs ul li {
+    margin: 0 6px 0 0;
+}
+
+.breadcrumbs ul li:not(:last-child)::after {
+    content: ">";
+    font-size: 12px;
+    position: relative;
+    margin-left: 6px;
+    color: var(--base-color-5);
+}
+
+.breadcrumbs ul span {
+    color: var(--base-color-5);
+}
 
 /*BASE*/

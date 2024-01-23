@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vsisanatorii</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<!-- SITE HEADER -->
+<header class="site_header">
+    <div class="header_info-row">
+        <div class="centre">
+            <a class="header_info-email" href="#">
+                <svg class="icon"><use xlink:href="./images/sprite.svg#email"></use></svg>
+                <span>info@vsisanatorii.com.ua</span>
+            </a>
+            <ul class="top_menu-1lvl">
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Новини</a></li>
+            </ul>
+            <div class="toggle_lang-deck">
+                <a class="selected_lang" href="#">
+                    <svg class="icon"><use xlink:href="./images/sprite.svg#ua"></use></svg>
+                    <span>Українська</span>
+                </a>
+                <ul class="toggle_lang-list">
+                    <li><a href="#"><span>Українська</span></a></li>
+                    <li><a href="#"><span>Російська</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="top_header">
+        <div class="centre">
+            <a class="top_mob-logo" href="/map.html"><img src="./images/header-mob-logo.svg" width="36" height="36"/></a>
+            <a class="top_header-text" href="/"><span class="site_name">vsisanatorii.com.ua</span>
+                <span class="site_name-subtitle">Всі курорти України</span></a>
+            <a class="top_header-btn open-mob_phones" href="#">
+                phones btn
+                <svg class="icon phone_icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>
+                <svg class="icon close_icon"><use xlink:href="./images/sprite.svg#close"></use></svg>
+            </a>
+            <a class="top_header-btn open-mob_menu" href="#">
+                mob menu btn
+                <svg class="icon menu_icon"><use xlink:href="./images/sprite.svg#menu"></use></svg>
+                <svg class="icon close_icon"><use xlink:href="./images/sprite.svg#close"></use></svg>
+            </a>
+            <div class="reservation"><span class="reservation_name">Відділ бронювання</span>
+                <ul class="reservation_phones">
+                    <li>
+                        <a href="#">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#viber"></use></svg>
+                            <span>+38 (097) 05 77 388</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="./images/sprite.svg#vodafone"></use>
+                            </svg>
+                            <span>+38 (066) 67 91 174</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>
+                            <span>+38 (066) 67 91 174</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a class="btn request_call" href="#">Замовити дзвінок</a>
+        </div>
+        <nav class="mobile_menu">
+            <div class="mobile-change_lang">
+                <a class="active" href="#">
+                    <svg class="icon"><use xlink:href="./images/sprite.svg#ua"></use></svg>
+                    <span>Українська</span>
+                </a>
+                <a href="#"><span>Російська</span></a>
+            </div>
+            <ul class="mob-top_menu">
+                <li><a href="#"><span>Головна</span></a></li>
+                <li class="has_drop">
+                    <a href="#"><span>Санаторії</span></a>
+                    <ul>
+                        <li><a href="#"><span>Трускавець</span></a></li>
+                        <li><a href="#"><span>Східниця</span></a></li>
+                        <li><a class="active" href="#"><span>Моршин</span></a></li>
+                        <li><a href="#"><span>Станів</span></a></li>
+                        <li><a href="#"><span>Закарпаття</span></a></li>
+                        <li><a href="#"><span>Хмільник</span></a></li>
+                        <li><a href="#"><span>Миргород</span></a></li>
+                        <li><a href="#"><span>Карпати</span></a></li>
+                    </ul>
+                </li>
+                <li><a class="active" href="#"><span>Блог</span></a></li>
+                <li><a href="#"><span>Новини</span></a></li>
+            </ul>
+            <div class="reservation">
+                <span class="reservation_name">Відділ бронювання</span>
+                <ul class="reservation_phones">
+                    <li>
+                        <a href="#">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#viber"></use></svg>
+                            <span>+38 (097) 05 77 388</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#vodafone"></use></svg>
+                            <span>+38 (066) 67 91 174</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>
+                            <span>+38 (066) 67 91 174</span>
+                        </a>
+                    </li>
+                </ul>
+                <a class="btn" href="#">Замовити дзвінок</a>
+            </div>
+            <a class="mob-menu_email" href="#">
+                <svg class="icon"><use xlink:href="./images/sprite.svg#email"></use></svg>
+                <span>info@vsisanatorii.com.ua</span>
+            </a>
+        </nav>
+        <div class="reservation-popup">
+            <span class="reservation-popup_name">Відділ бронювання</span>
+            <ul class="reservation-popup_phones">
+                <li>
+                    <a href="#">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#viber"></use></svg>
+                        <span>+38 (097) 05 77 388</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#vodafone"></use></svg>
+                        <span>+38 (066) 67 91 174</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>
+                        <span>+38 (066) 67 91 174</span>
+                    </a>
+                </li>
+            </ul>
+            <a class="btn big_btn" href="#">Замовити дзвінок</a>
+        </div>
+    </div>
+    <nav class="top_catalog">
+        <div class="centre">
+            <a class="mob_catalog-gtn" href="#">
+                <svg class="icon"><use xlink:href="./images/sprite.svg#mob-catalog"></use></svg>
+                <span>Каталог санаторіїв</span></a>
+            <ul class="top_catalog-list">
+                <li><a href="#"><span>Трускавець</span></a></li>
+                <li><a href="#"><span>Східниця</span></a></li>
+                <li><a class="active" href="#"><span>Моршин</span></a></li>
+                <li><a href="#"><span>Станів</span></a></li>
+                <li><a href="#"><span>Закарпаття</span></a></li>
+                <li><a href="#"><span>Хмільник</span></a></li>
+                <li><a href="#"><span>Миргород</span></a></li>
+                <li><a href="#"><span>Карпати</span></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="centre site_grid">
+        <aside class="left_menu">
+            <!-- SEARCH LEFT MENU -->
+            <form class="search_left-menu">
+                <div class="pattern_tittle">
+                    <span class="H2">Пошук у Карпатах</span>
+                    <div class="pattern_box">
+                        <span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span>
+                    </div>
+                </div>
+                <div class="search_left-inner">
+                    <input type="text">
+                    <button class="btn"><svg class="icon"><use xlink:href="./images/sprite.svg#search"></use></svg></button>
+                </div>
+            </form>
+            <!-- CATALOG 2-3 LVL -->
+            <ul class="catalog_2-3lvl">
+                <li class="has_drop">
+                    <a href="#">Санаторії трускавця</a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="name">Міротель</span>
+                                <span class="status" style="color: #5A756A; background-color: #DCE5E2;">Новинка</span>
+                                <span class="status" style="color: #C13055; background-color: #F2CBD5;">Акція</span>
+                                <span class="status" style="color: #C13055; background-color: #F2CBD5;">Знижка –10%</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="name">Либідь</span>
+                                <span class="status" style="color: #C13055; background-color: #F2CBD5;">Акція</span>
+                                <span class="status" style="color: #C13055; background-color: #F2CBD5;">Знижка –10%</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="name">Міротель</span>
+                                <span class="status" style="color: #5A756A; background-color: #DCE5E2;">Новинка</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Готелі трускавця</a>
+                </li>
+                <li>
+                    <a href="#">Вілли трускавця</a>
+                </li>
+            </ul>
+            <!-- LAST NEWS -->
+            <div class="last_news"><!-- максимально 3 новини -->
+                <div class="pattern_tittle">
+                    <span class="H2">Новини Трускавця</span>
+                    <div class="pattern_box">
+                        <span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span>
+                    </div>
+                </div>
+                <div class="last_news-slider">
+                    <figure class="last_news-item">
+                        <a href="#" class="last_news-img"><img src="https://vsisanatorii.com.ua/upload/news/200/197/zobrazhennia_viber_2021_01_19_17_04_49.jpg" width="300" height="200" alt="last news image"></a>
+                        <figcaption>
+                            <time><svg class="icon"><use xlink:href="./images/sprite.svg#calendar"></use></svg><span>04.12.2023</span></time>
+                            <a href="#" class="last_news-title">Пакет «Гірськолижний» — всього 999 грн на добу. Санаторій «Карпати»</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="last_news-item">
+                        <a href="#" class="last_news-img"><img src="https://vsisanatorii.com.ua/upload/news/200/197/zobrazhennia_viber_2021_01_19_17_04_49.jpg" width="300" height="200" alt="last news image"></a>
+                        <figcaption>
+                            <time><svg class="icon"><use xlink:href="./images/sprite.svg#calendar"></use></svg><span>04.12.2023</span></time>
+                            <a href="#" class="last_news-title">Пакет «Гірськолижний» — всього 999 грн на добу. Санаторій «Карпати»</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="last_news-item">
+                        <a href="#" class="last_news-img"><img src="https://vsisanatorii.com.ua/upload/news/200/197/zobrazhennia_viber_2021_01_19_17_04_49.jpg" width="300" height="200" alt="last news image"></a>
+                        <figcaption>
+                            <time><svg class="icon"><use xlink:href="./images/sprite.svg#calendar"></use></svg><span>04.12.2023</span></time>
+                            <a href="#" class="last_news-title">Пакет «Гірськолижний» — всього 999 грн на добу. Санаторій «Карпати»</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <svg class="icon last_news-swipe"><use xlink:href="./images/sprite.svg#swipe"></use></svg>
+                <a href="#" class="btn btn_outline show_all-news">Всі новини Трускавця</a>
+            </div>
+        </aside>
+        <div class="content">
+            <!-- MAIN ARTICLE -->
+            <article class="main_article">
+                <header class="pattern_tittle">
+                    <h1>Відпочинок в Карпатах</h1>
+                    <div class="pattern_box">
+                        <span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span>
+                    </div>
+                </header>
+                <div class="article_content">
+                    <p>Щороку все більше туристів із різних країн мандрують Карпатами. У цьому випадку мандрівники обирають не тільки відпочинок на свіжому повітрі у садибі чи готелі, а гірські піші прогулянки. До прикладу влітку на Чорногірському хребті - як у вихідні на Хрещатику. На вершинах гір можна зустріти не тільки українців з різних областей, а й поляків, чехів, німців. Відпочинок в Карпатах може бути різним. Дехто любить спокій та комфорт, іншим потрібний екстрім. Готелі, мотелі та садиби кожного року намагаються покращити сервісні та жилі умови.</p>
+                </div>
+            </article>
+            <!-- GRID SLIDER -->
+            <section class="grid_slider">
+                <div class="pattern_tittle">
+                    <span class="H2">Популярні напрямки</span>
+                    <div class="pattern_box">
+                        <span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span>
+                    </div>
+                </div>
+                <div class="grid_slider-slick two-rows">
+                    <div class="grid_slider-slide">
+                        <a href="#" class="grid_slide-img">
+                            <img src="https://vsisanatorii.com.ua/upload/catalog/100/3/c_4.jpg" width="308" height="250" alt="slider image">
+                        </a>
+                        <div class="figcaption">
+                            <a href="#" class="grid_slide-title center-pos">Славське</a>
+                        </div>
+                    </div>
+                    <div class="grid_slider-slide">
+                        <a href="#" class="grid_slide-img">
+                            <img src="https://vsisanatorii.com.ua/upload/catalog/100/3/c_4.jpg" width="308" height="250" alt="slider image">
+                        </a>
+                        <div class="figcaption">
+                            <a href="#" class="grid_slide-title center-pos">Труцскавець</a>
+                        </div>
+                    </div>
+                    <div class="grid_slider-slide">
+                        <a href="#" class="grid_slide-img">
+                            <img src="https://vsisanatorii.com.ua/upload/catalog/100/3/c_4.jpg" width="308" height="250" alt="slider image">
+                        </a>
+                        <div class="figcaption">
+                            <a href="#" class="grid_slide-title center-pos">Яремче</a>
+                        </div>
+                    </div>
+                </div>
+                <svg class="icon grid_slider-swipe"><use xlink:href="./images/sprite.svg#swipe"></use></svg>
+            </section>
+            <!-- MAIN ARTICLE -->
+            <article class="main_article">
+                <header class="pattern_tittle">
+                    <h2>Відпочинок в Карпатах.
+                        Короткий опис курортів та областей</h2>
+                    <div class="pattern_box">
+                        <span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span>
+                    </div>
+                </header>
+                <div class="article_content">
+                    <p>
+                        <img src="https://vsisanatorii.com.ua/upload/catalog/100/3/c_4.jpg" style="width: 33.33%; height: auto; float: left; padding: 0 5px; margin-bottom: 20px;" alt="article image">
+                        <img src="https://vsisanatorii.com.ua/upload/catalog/100/3/c_4.jpg" style="width: 33.33%; height: auto; float: left; padding: 0 5px; margin-bottom: 20px;" alt="article image">
+                        <img src="https://vsisanatorii.com.ua/upload/catalog/100/3/c_4.jpg" style="width: 33.33%; height: auto; float: left; padding: 0 5px; margin-bottom: 20px;" alt="article image">
+                    </p>
+                    <p>Найпопулярніший <b>відпочинок в Карпатах</b> у Львівській, Івано-франківській та Закарпатській областях, а також у Міжгірському, Воловецькому та Рахівському районах. Українські Карпати відвідують тисячі людей з різних областей та країн. Найбільший потік туристів в зимовий період, оскільки схили гір ідеально підходять для любителів гірськолижного спорту, а цінова політика значно дешевша, ніж у країнах Європи та закордоном.</p>
+                    <p><b>Карпати відпочинок</b> є популярним у областях та районах, де знаходяться гірськолижні курорти та канатно – крісельні дороги. Пропонуємо Вашій увазі короткий довідник по курортах, згідно якого Ви ознайомитесь з коротким описом селищ та міст для вашого розміщення.</p>
+                </div>
+            </article>
+            <!-- MAIN ARTICLE -->
+            <article class="main_article">
+                <header class="pattern_tittle">
+                    <h2>Українські Карпати красиві у любу пору року. Сезони відпочинку в Карпатах.</h2>
+                    <div class="pattern_box">
+                        <span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span>
+                    </div>
+                </header>
+                <div class="article_content">
+                    <p>
+                        <img src="https://vsisanatorii.com.ua/upload/catalog/100/3/c_4.jpg" style="width: 33.33%; height: auto; float: left; padding: 0 5px; margin-bottom: 20px;" alt="article image">
+                        <img src="https://vsisanatorii.com.ua/upload/catalog/100/3/c_4.jpg" style="width: 33.33%; height: auto; float: left; padding: 0 5px; margin-bottom: 20px;" alt="article image">
+                        <img src="https://vsisanatorii.com.ua/upload/catalog/100/3/c_4.jpg" style="width: 33.33%; height: auto; float: left; padding: 0 5px; margin-bottom: 20px;" alt="article image">
+                    </p>
+                    <p>Найпопулярніший <b>відпочинок в Карпатах</b> у Львівській, Івано-франківській та Закарпатській областях, а також у Міжгірському, Воловецькому та Рахівському районах. Українські Карпати відвідують тисячі людей з різних областей та країн. Найбільший потік туристів в зимовий період, оскільки схили гір ідеально підходять для любителів гірськолижного спорту, а цінова політика значно дешевша, ніж у країнах Європи та закордоном.</p>
+                    <p><b>Карпати відпочинок</b> є популярним у областях та районах, де знаходяться гірськолижні курорти та канатно – крісельні дороги. Пропонуємо Вашій увазі короткий довідник по курортах, згідно якого Ви ознайомитесь з коротким описом селищ та міст для вашого розміщення.</p>
+                </div>
+            </article>
+            <!-- MAIN ARTICLE -->
+            <article class="main_article">
+                <header class="pattern_tittle">
+                    <h2>Карпати влітку. Чим привабливий відпочинок в Карпатах літом?</h2>
+                    <div class="pattern_box">
+                        <span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span>
+                    </div>
+                </header>
+                <div class="article_content">
+                    <p>Туристи, які вважають, що в Карпатах краще відпочити зимою, можуть розвіяти свої думки поїхавши туди влітку, оскільки цей період є дуже красивим та різноманітним. Чудові краєвиди, зелені дерева та бурхливі водоспади - це рай для тих, хто мріє усамітнитись з природою. Відпочинок в Карпатах літом, дає прекрасну можливість відвідати цікаві екскурсійні маршрути, відвідати ярмарки та виставки (дегустації вина, сиру та інше). Також цей час чудово підходить для пішохідних прогулянок в гори, катанню на велосипедах та квадро циклах, а також купання в справжніх гірських річках. Карпати влітку є дуже доступним, оскільки ціни на готелі та садиби є досить реальними для людей середнього класу, а також студентів та молоді</p>
+                </div>
+            </article>
+
+            <!-- LAST NEWS -->
+            <div class="last_news"><!-- максимально 3 новини -->
+                <div class="pattern_tittle">
+                    <span class="H2">Новини Трускавця</span>
+                    <div class="pattern_box">
+                        <span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span>
+                    </div>
+                </div>
+                <div class="last_news-slider">
+                    <figure class="last_news-item">
+                        <a href="#" class="last_news-img"><img src="https://vsisanatorii.com.ua/upload/news/200/197/zobrazhennia_viber_2021_01_19_17_04_49.jpg" width="300" height="200" alt="last news image"></a>
+                        <figcaption>
+                            <time><svg class="icon"><use xlink:href="./images/sprite.svg#calendar"></use></svg><span>04.12.2023</span></time>
+                            <a href="#" class="last_news-title">Пакет «Гірськолижний» — всього 999 грн на добу. Санаторій «Карпати»</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="last_news-item">
+                        <a href="#" class="last_news-img"><img src="https://vsisanatorii.com.ua/upload/news/200/197/zobrazhennia_viber_2021_01_19_17_04_49.jpg" width="300" height="200" alt="last news image"></a>
+                        <figcaption>
+                            <time><svg class="icon"><use xlink:href="./images/sprite.svg#calendar"></use></svg><span>04.12.2023</span></time>
+                            <a href="#" class="last_news-title">Пакет «Гірськолижний» — всього 999 грн на добу. Санаторій «Карпати»</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="last_news-item">
+                        <a href="#" class="last_news-img"><img src="https://vsisanatorii.com.ua/upload/news/200/197/zobrazhennia_viber_2021_01_19_17_04_49.jpg" width="300" height="200" alt="last news image"></a>
+                        <figcaption>
+                            <time><svg class="icon"><use xlink:href="./images/sprite.svg#calendar"></use></svg><span>04.12.2023</span></time>
+                            <a href="#" class="last_news-title">Пакет «Гірськолижний» — всього 999 грн на добу. Санаторій «Карпати»</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <svg class="icon last_news-swipe"><use xlink:href="./images/sprite.svg#swipe"></use></svg>
+                <a href="#" class="btn btn_outline show_all-news">Всі новини Трускавця</a>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- SITE FOOTER -->
+<footer class="site_footer">
+    <div class="bottom_inner">
+        <div class="centre">
+            <nav class="bottom_menu">
+                <ul>
+                    <li><a href="#"><span>Трускавець</span></a></li>
+                    <li><a href="#"><span>Східниця</span></a></li>
+                    <li><a href="#"><span>Моршин</span></a></li>
+                    <li><a href="#"><span>Станів</span></a></li>
+                    <li><a href="#"><span>Закарпаття</span></a></li>
+                    <li><a href="#"><span>Хмільник</span></a></li>
+                    <li><a href="#"><span>Миргород</span></a></li>
+                    <li><a href="#"><span>Карпати</span></a></li>
+                </ul>
+            </nav>
+            <div class="bottom_copy">
+                <span class="rest_treatment"><a href="#">Vsisanatorii.com.ua</a><span>— відпочинок та лікування в Україні</span></span><a href="#"></a>
+                <div class="contract">
+                    <a href="#">Договір-оферта</a>
+                </div>
+                <span class="sufix-link">
+                            <a href="https://websufix.com/e-commerce">Створення інтернет магазину</a>
+                            <a href="https://websufix.com">веб студія</a> SUFIX
+                        </span>
+            </div>
+        </div>
+    </div>
+    <div class="reservation_box">
+        <div class="centre">
+            <span class="reservation-title">Відділ бронювання:</span>
+            <div class="reservation-item">
+                <span>КИЇВСТАР | VIBER </span>
+                <a href="#">+38 (097) 057 73 88</a>
+            </div>
+            <div class="reservation-item">
+                <span>МТС </span>
+                <a href="#">+38 (066) 679 11 74</a>
+            </div>
+            <div class="reservation-item">
+                <span>LIFE </span>
+                <a href="#">+38 (093) 686 86 77</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- POPUP BOX -->
+<div class="popup_box"> <!-- active --> <!-- потрібно додавати до body клас overflow щоб заборонити скрол -->
+    <div class="popup active">
+        <span class="H2">Замовити дзвінок</span>
+        <span class="popup_text">Заповніть коротку форму нижче і наш менеджер зв’яжеться з вами впродовж 15 хвилин</span>
+        <form class="call_back-form">
+            <label class="styled_input">
+                <div class="styled_box">
+                    <input type="text" placeholder="Ваше ім'я"/>
+                </div>
+            </label>
+            <label class="styled_input">
+                <div class="styled_box">
+                    <input type="tel" placeholder="+38 (000) 000 00 00"/>
+                </div>
+            </label>
+            <button class="btn big_btn">Замовити дзвінок</button>
+        </form>
+        <span class="popup_bottom-info">Натискаючи на кнопку, ви даєте згоду на обробку персональних даних та погоджуєтесь з <a href="#">Договором офертою</a></span>
+        <a href="#" class="close_popup">close</a>
+    </div>
+    <div class="popup popup-thanks active">
+        <img src="./images/popup-pattern.png" width="160" height="160" class="popup_pattern" alt="popup pattern image">
+        <span class="H2">Дякуємо!</span>
+        <span class="popup_text">Ваша заявка прийнята. Наш менеджер зв’яжеться з вами впродовж 15 хвилин</span>
+        <a href="#" class="close_popup">close</a>
+    </div>
+
+</div>
+
+<div class="black hidden"></div>
+<a href="#" class="up"><span>Вгору</span></a>
+<!-- STYLEGUIDE -->
+<div class="styleguide" style="display: none; flex-direction: column; padding: 12px;">
+    <div class="pattern_tittle">
+        <span class="H2">Акційні пропозиції</span>
+        <div class="pattern_box">
+            <span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span><span class="pattern_img"></span>
+        </div>
+    </div>
+    <label class="styled_input">
+        <span class="styled_label">Ваше імя</span>
+        <div class="styled_box">
+            <input type="text" placeholder="імя"/>
+            <div class="input_icon">
+                <img class="error_icon" src="./images/error-icon.svg" width="22" height="22" alt="error icon"/>
+            </div>
+        </div>
+    </label>
+    <label class="styled_input">
+        <span class="styled_label">Ваше імя</span>
+        <div class="styled_box">
+            <textarea placeholder="імя"></textarea>
+            <div class="input_icon">
+                <img class="error_icon" src="./images/error-icon.svg" width="22" height="22" alt="error icon"/>
+            </div>
+        </div>
+    </label>
+    <label class="styled_input">
+        <span class="styled_label">Ваше імя важилово<i>*</i></span>
+        <div class="styled_box">
+            <input type="email" placeholder="імя"/>
+            <div class="input_icon">
+                <img class="error_icon" src="./images/error-icon.svg" width="22" height="22" alt="error icon"/>
+            </div>
+        </div>
+    </label>
+    <label class="styled_input">
+        <span class="styled_label">Ваше імя помилка</span>
+        <div class="styled_box">
+            <input class="error" type="password" placeholder="імя"/>
+            <div class="input_icon">
+                <img class="error_icon" src="./images/error-icon.svg" width="22" height="22" alt="error icon"/>
+            </div>
+        </div>
+        <span class="styled_info error">інфо про помилку</span>
+    </label>
+    <label class="styled_input">
+        <span class="styled_label">Ваше імя не активно</span>
+        <div class="styled_box">
+            <input type="text" placeholder="імя" disabled="disabled"/>
+            <div class="input_icon">
+                <img class="error_icon" src="./images/error-icon.svg" width="22" height="22" alt="error icon"/>
+            </div>
+        </div>
+    </label>
+    <div class="dropdown order_payment">
+        <div class="overflow">
+            <span>Випадайка світла</span><button class="drop_arrow"></button>
+        </div>
+        <ul>
+            <li><a href="#">ua</a></li>
+            <li><a href="#">pl</a></li>
+            <li><a href="#">sdfsdf</a></li>
+        </ul>
+        <input type="hidden" name="payment" value=""/>
+    </div>
+    <span>.</span>
+    <div class="dropdown small order_payment">
+        <div class="overflow">
+            <span>Випадайка світла</span><button class="drop_arrow"></button>
+        </div>
+        <ul>
+            <li><a href="#">ua</a></li>
+            <li><a href="#">pl</a></li>
+            <li><a href="#">sdfsdf</a></li>
+        </ul>
+        <input type="hidden" name="payment" value=""/>
+    </div>
+    <span>.</span>
+    <div class="dropdown filled order_payment">
+        <div class="overflow">
+            <span>Випадайка темний</span><button class="drop_arrow"></button>
+        </div>
+        <ul>
+            <li><a href="#">ua</a></li>
+            <li><a href="#">pl</a></li>
+            <li><a href="#">sdfsdf</a></li>
+        </ul>
+        <input type="hidden" name="payment" value=""/>
+    </div>
+    <span>.</span>
+    <div class="dropdown small filled order_payment">
+        <div class="overflow">
+            <span>Випадайка темний</span><button class="drop_arrow"></button>
+        </div>
+        <ul>
+            <li><a href="#">ua</a></li>
+            <li><a href="#">pl</a></li>
+            <li><a href="#">sdfsdf</a></li>
+        </ul>
+        <input type="hidden" name="payment" value=""/>
+    </div>
+    <span>.</span>
+    <div class="dropdown disabled order_payment">
+        <div class="overflow">
+            <span>Випадайка світла</span><button class="drop_arrow"></button>
+        </div>
+        <ul>
+            <li><a href="#">ua</a></li>
+            <li><a href="#">pl</a></li>
+            <li><a href="#">sdfsdf</a></li>
+        </ul>
+        <input type="hidden" name="payment" value=""/>
+    </div>
+    <span>.</span>
+    <div class="dropdown filled disabled order_payment">
+        <div class="overflow">
+            <span>Випадайка темний</span><button class="drop_arrow"></button>
+        </div>
+        <ul>
+            <li><a href="#">ua</a></li>
+            <li><a href="#">pl</a></li>
+            <li><a href="#">sdfsdf</a></li>
+        </ul>
+        <input type="hidden" name="payment" value=""/>
+    </div>
+    <span>.</span>
+    <input type="text" placeholder="Name">
+    <span>.</span>
+    <input class="error" type="text" placeholder="Name">
+    <span>.</span>
+    <input type="text" placeholder="Name" disabled="">
+    <span>.</span>
+    <textarea placeholder="text"></textarea>
+    <span>.</span>
+    <a class="btn big_btn" href="#">клипочка велика</a>
+    <span>.</span>
+    <a class="btn small_btn main_btn" href="#">Клипочка маленька</a>
+    <span>.</span>
+    <a class="btn" href="#">Клипочка</a>
+    <span>.</span>
+    <a class="btn disabled" href="#">Клипочка не активна</a>
+    <span>.</span>
+    <a class="btn btn_outline" href="#">Клипочка обведена</a>
+    <article style="display: flex; flex-direction: column;">
+        <h1>Hello World</h1><span class="H1">Hello world</span>
+        <h2>Hello World</h2><span class="H2">Hello world</span>
+        <h3>Hello World</h3><span class="H3">Hello world</span>
+        <h4>Hello World</h4><span class="H4">Hello world</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, excepturi, facere.
+            Veniam!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, excepturi, facere.
+            Veniam!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, excepturi, facere.
+            Veniam!</p>
+        <ul>
+            <li>test test test</li>
+            <li>test test test</li>
+            <li>test test test</li>
+            <li>test test test</li>
+        </ul>
+        <ol>
+            <li>test test test</li>
+            <li>test test test</li>
+            <li>test test test</li>
+            <li>test test test</li>
+        </ol>
+    </article>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/plugins/slick.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

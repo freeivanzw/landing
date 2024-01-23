@@ -1,0 +1,105 @@
+@mixin resorts-list-480 {
+    /*RESORTS LIST*/
+
+    /*RESORTS LIST*/
+}
+
+@mixin resorts-list-640 {
+    /*RESORTS LIST*/
+
+    /*RESORTS LIST*/
+}
+
+@mixin resorts-list-768 {
+    /*RESORTS LIST*/
+
+    .resort_item + .resort_item {
+        margin-top: 16px;
+    }
+
+    .resort_item > .col:nth-child(1) {
+        flex: 0 0 245px;
+        padding-bottom: 0;
+    }
+    .resort_item-img {
+        margin-bottom: 0;
+        height: 180px;
+    }
+
+    .resort_item > .col:nth-child(1) .rating {
+        display: none;
+    }
+
+    .resort_item > .col:nth-child(1) .response-counter {
+        display: none;
+    }
+
+    .resort_item > .col:nth-child(2) {
+        padding: 20px;
+    }
+
+    .resort_item > .col:nth-child(2) .btn {
+        display: none;
+    }
+
+    .resort_link {
+        font-size: 20px;
+    }
+
+    .resort_preference {
+        margin-bottom: 10px;
+    }
+
+    .resort_item > .col:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px 20px 10px;
+    }
+
+    .resort_item .rating {
+        margin-bottom: 4px;
+    }
+
+    .resort_item .rating .star {
+        width: 20px;
+        height: 20px;
+        margin: 0 2px;
+    }
+
+    .resort_item .rating .star img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .resort_item .response-counter {
+        margin-bottom: 16px;
+    }
+
+    .resort_item > .col:nth-child(3) .btn {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    /*RESORTS LIST*/
+}
+
+@mixin resorts-list-1024 {
+    /*RESORTS LIST*/
+
+    /* ------ hover ------ */
+    .resort_link:hover {
+        color: var(--accent-color-2);
+    }
+
+    .resort_item:hover {
+        box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.08);
+    }
+    /* ------ hover ------ */
+    /*RESORTS LIST*/
+}
+
+@mixin resorts-list-1332 {
+    /*RESORTS LIST*/
+
+    /*RESORTS LIST*/
+}

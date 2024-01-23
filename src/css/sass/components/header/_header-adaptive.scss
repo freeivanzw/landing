@@ -244,7 +244,7 @@
     }
 
     .top_catalog-list > li > a > span {
-        padding: 0 5px 20px 5px;
+        padding: 0 5px 16px 5px;
         border-bottom: 0;
         position: relative;
     }
@@ -297,40 +297,46 @@
         font-size: 16px;
     }
 
-    @media (hover: hover) {
-        .header_info-email:hover {
-            color: var(--text-color);
-        }
-
-        .header_info-email:hover .icon {
-            fill: var(--text-color)
-        }
-
-        .top_menu-1lvl a:hover {
-            color: var(--accent-color-1)
-        }
-
-        .selected_lang:hover {
-            color: var(--accent-color-1)
-        }
-
-        .top_header .reservation .reservation_phones a:hover {
-            color: var(--accent-color-1);
-        }
-
-        .top_catalog-list a:hover {
-            color: var(--accent-color-1)
-        }
-
-        .toggle_lang-list a:hover {
-            color: var(--accent-color-1);
-        }
+    /* ------ hover ------ */
+    .header_info-email:hover {
+        color: var(--text-color);
     }
+
+    .header_info-email:hover .icon {
+        fill: var(--text-color)
+    }
+
+    .top_menu-1lvl a:hover {
+        color: var(--accent-color-1)
+    }
+
+    .selected_lang:hover {
+        color: var(--accent-color-1)
+    }
+
+    .top_header .reservation .reservation_phones a:hover {
+        color: var(--accent-color-1);
+    }
+
+    .top_catalog-list a:hover {
+        color: var(--accent-color-1)
+    }
+
+    .toggle_lang-list a:hover {
+        color: var(--accent-color-1);
+    }
+    /* ------ hover ------ */
     /*SITE HEADER*/
 }
 
 @mixin header-1332 {
     /*SITE HEADER*/
+    .top_header .site_name {
+        font-size: 26px;
+    }
 
+    .reservation_phones a {
+        font-size: 18px;
+    }
     /*SITE HEADER*/
 }

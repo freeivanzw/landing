@@ -6,6 +6,10 @@
 
 @mixin footer-640 {
     /*SITE FOOTER*/
+    .site_footer {
+        padding-bottom: 48px;
+    }
+
     .bottom_menu ul {
         display: flex;
         flex-wrap: wrap;
@@ -14,6 +18,15 @@
         grid-row-gap: 0;
     }
 
+    .reservation_box {
+        //position: relative;
+        //bottom: auto;
+        //left: auto;
+    }
+
+    .reservation_box .centre {
+        justify-content: space-around;
+    }
 
     /*SITE FOOTER*/
 }
@@ -86,34 +99,41 @@
         border-left: 1px solid rgba(255, 255, 255, 0.3);
     }
 
-    @media (hover: hover) {
-
-        .bottom_menu ul a:hover {
-            color: var(--accent-color-1);
-        }
-
-        .rest_treatment a:hover {
-            color: var(--accent-color-1);
-            text-decoration: underline;
-        }
-
-        .site_footer .contract a:hover {
-            text-decoration: underline;
-        }
-
-        .sufix-link a:hover {
-            text-decoration: underline;
-        }
-
-        .reservation-item a:hover {
-            opacity: 0.75;
-        }
+    .reservation-item span {
+        font-size: 16px;
     }
+
+    /* ------ hover ------ */
+    .bottom_menu ul a:hover {
+        color: var(--accent-color-1);
+    }
+
+    .rest_treatment a:hover {
+        color: var(--accent-color-1);
+        text-decoration: underline;
+    }
+
+    .site_footer .contract a:hover {
+        text-decoration: underline;
+    }
+
+    .sufix-link a:hover {
+        text-decoration: underline;
+    }
+
+    .reservation-item a:hover {
+        opacity: 0.75;
+    }
+    /* ------ hover ------ */
+
     /*SITE FOOTER*/
 }
 
 @mixin footer-1332 {
     /*FOOTER*/
-
+    .reservation-item {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
     /*FOOTER*/
 }

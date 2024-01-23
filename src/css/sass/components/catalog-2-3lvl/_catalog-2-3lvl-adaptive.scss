@@ -53,22 +53,23 @@
         font-size: 16px;
     }
 
-    @media (hover: hover) {
-        .catalog_2-3lvl > li > a:hover {
-            color: var(--base-color-1);
-            background-color: var(--accent-color-1);
-        }
 
-        .catalog_2-3lvl > li > ul > li > a:hover {
-            color: var(--accent-color-1);
-            background-color: var(--accent-color-6);
-        }
+    /* ------ hover ------ */
+    .catalog_2-3lvl > li > a:hover {
+        color: var(--base-color-1);
+        background-color: var(--accent-color-1);
     }
+
+    .catalog_2-3lvl > li > ul > li > a:hover {
+        color: var(--accent-color-1);
+        background-color: var(--accent-color-6);
+    }
+    /* ------ hover ------ */
     /*CATALOG 2-3 LVL*/
 }
 
 @mixin catalog-2-3lvl-1332 {
-    /*CATALOG 2-3 LVL*/
+/*CATALOG 2-3 LVL*/
 
-    /*CATALOG 2-3 LVL*/
+/*CATALOG 2-3 LVL*/
 }

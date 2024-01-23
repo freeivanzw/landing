@@ -371,17 +371,24 @@ h4,
 
 .pattern_tittle {
   display: flex;
-  align-items: flex-end;
   margin-bottom: 25px;
 }
 
 .pattern_tittle .H2,
-.pattern_tittle h1 {
+.pattern_tittle .H1,
+.pattern_tittle h1,
+.pattern_tittle h2 {
+  flex: 0 1 668px;
   font-size: 24px;
-  flex: 0 0 auto;
   max-width: calc(100% - 32px);
   margin-bottom: 0;
   padding-right: 32px;
+}
+
+.pattern_tittle h1,
+.pattern_tittle .H1 {
+  text-transform: uppercase;
+  font-size: 28px;
 }
 
 .pattern_box {
@@ -1004,13 +1011,165 @@ article > * {
 }
 
 /*styled input*/
+.centre.site_grid {
+  overflow: hidden;
+}
+
+.up {
+  font-size: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--accent-color-4);
+  position: fixed;
+  bottom: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--base-color-1);
+  border-radius: 3px;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.up::before,
+.up::after {
+  content: "";
+  width: 1px;
+  height: 7px;
+  background-color: var(--accent-color-1);
+  position: absolute;
+  top: 11px;
+  left: 50%;
+  transform-origin: top;
+}
+
+.up::before {
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.up::after {
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.up.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.pagination ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination ul li {
+  margin: 0 2px;
+}
+
+.pagination ul span,
+.pagination ul a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--border-radius);
+  position: relative;
+  transition: 0.3s;
+}
+
+.pagination ul span.current {
+  background-color: var(--accent-color-5);
+}
+
+.pagination ul a.to-start::before,
+.pagination ul a.to-start::after,
+.pagination ul a.to-end::before,
+.pagination ul a.to-end::after,
+.pagination ul a.prev::before,
+.pagination ul a.next::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid var(--accent-color-1);
+  border-bottom: 1px solid var(--accent-color-1);
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.pagination ul a.to-start::before,
+.pagination ul a.to-end::before {
+  left: 11px;
+}
+
+.pagination ul a.to-start::after,
+.pagination ul a.to-end::after {
+  left: 18px;
+}
+
+.pagination ul a.next,
+.pagination ul a.to-end {
+  transform: rotate(180deg);
+}
+
+/* breadcrumbs */
+.breadcrumbs {
+  margin-top: -5px;
+  margin-bottom: 24px;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs ul a,
+.breadcrumbs ul span {
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--base-color-7);
+  transition: 0.3s;
+}
+
+.breadcrumbs ul li {
+  margin: 0 6px 0 0;
+}
+
+.breadcrumbs ul li:not(:last-child)::after {
+  content: ">";
+  font-size: 12px;
+  position: relative;
+  margin-left: 6px;
+  color: var(--base-color-5);
+}
+
+.breadcrumbs ul span {
+  color: var(--base-color-5);
+}
+
 /*BASE*/
 /* -------- COMPONENTS -------- */
 /*SITE HEADER*/
 .site_header {
   width: 100%;
   margin-bottom: 20px;
-  padding: 56px 0 10px 0;
+  padding: 60px 0 10px 0;
   background-color: var(--base-color-1);
   box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.08);
 }
@@ -1259,6 +1418,10 @@ article > * {
 .mobile_menu.active {
   opacity: 1;
   visibility: visible;
+}
+
+.top_header .mobile_menu .reservation {
+  display: flex;
 }
 
 .mobile-change_lang {
@@ -1518,7 +1681,7 @@ article > * {
 /*SITE HEADER*/
 /*SITE FOOTER*/
 .site_footer {
-  padding: 20px 0 0 0;
+  padding: 20px 0 66px 0;
   background-color: var(--base-color-1);
 }
 
@@ -1601,12 +1764,17 @@ article > * {
   color: var(--base-color-1);
   background-color: var(--accent-color-2);
   padding: 10px 0 12px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
 }
 
 .reservation_box .centre {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .reservation-title {
@@ -1615,6 +1783,10 @@ article > * {
 
 .reservation-item {
   display: inline-block;
+}
+
+.reservation-item span {
+  font-size: 10px;
 }
 
 .reservation-item a {
@@ -1636,6 +1808,15 @@ article > * {
   width: 100%;
 }
 
+.centre.site_grid .search_box {
+  width: calc(100% + 32px);
+  margin: 0 -16px 18px -16px;
+}
+
+.centre.site_grid .search_box:nth-child(1) {
+  margin-top: -20px;
+}
+
 .centre.site_grid .content .search_box {
   display: none;
 }
@@ -1650,6 +1831,10 @@ article > * {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.centre.site_grid .search_box-bg {
+  border-radius: 0;
 }
 
 .search_box .H1 {
@@ -2116,6 +2301,17 @@ article > * {
   margin-bottom: 0;
 }
 
+.grid_slider-swipe {
+  display: none;
+  width: 24px;
+  height: 24px;
+  margin-top: -24px;
+}
+
+.grid_slider-slick.slick-initialized + .grid_slider-swipe {
+  display: block;
+}
+
 /*GRID SLIDER*/
 /*MAIN ARTICLE*/
 .main_article {
@@ -2211,3 +2407,234 @@ article > * {
 }
 
 /*READ MORE*/
+/*POPUP BOX*/
+.popup_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: calc(100% - 56px);
+  position: fixed;
+  top: 56px;
+  left: 0;
+  z-index: 10;
+  background: rgba(39, 53, 47, 0.7);
+  border-top: 1px solid var(--accent-color-4);
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.popup_box.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px;
+  background-color: var(--accent-color-7);
+}
+
+.popup.active {
+  display: flex;
+}
+
+.popup .H2 {
+  text-align: center;
+}
+
+.popup_pattern {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 20px auto;
+}
+
+.popup_text {
+  font-size: 14px;
+  color: var(--base-color-7);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.popup .styled_input {
+  margin-bottom: 10px;
+}
+
+.popup .btn {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.popup_bottom-info {
+  text-align: center;
+  font-size: 12px;
+  color: var(--base-color-5);
+}
+
+.popup_bottom-info a {
+  text-decoration: none;
+  color: var(--accent-color-1);
+}
+
+.close_popup {
+  font-size: 0;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.close_popup::before,
+.close_popup::after {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: var(--accent-color-1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.close_popup::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.close_popup::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/*POPUP BOX*/
+/*RESORTS LIST*/
+.resorts_list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--section-bottom);
+}
+
+.resorts_list-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.resort_item {
+  display: flex;
+  border: 1px solid var(--accent-color-4);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background-color: var(--site-bg-color);
+  box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0);
+  transition: 0.3s;
+}
+
+.resort_item + .resort_item {
+  margin-top: 6px;
+}
+
+.resort_item > .col:nth-child(1) {
+  flex: 0 0 120px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.resort_item-img {
+  display: flex;
+  margin-bottom: 16px;
+  height: 120px;
+}
+
+.resort_item-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 5px 5px;
+  object-fit: cover;
+}
+
+.resort_item .rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+
+.resort_item .rating .star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.resort_item .rating .star img {
+  display: block;
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+.resort_item .response-counter {
+  font-size: 12px;
+  color: var(--base-color-6);
+  text-align: center;
+}
+
+.resort_item > .col:nth-child(2) {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.resort_link {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent-color-1);
+  text-decoration: none;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+
+.resort_preference {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.resort_preference li {
+  font-size: 12px;
+  color: var(--base-color-7);
+  margin: 0 6px 3px 0;
+}
+
+.resort_preference li + li::before {
+  content: "•";
+  margin-right: 6px;
+}
+
+.resort_description {
+  font-size: 12px;
+  color: var(--base-color-7);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 6px;
+}
+
+.resort_item > .col:nth-child(3) {
+  display: none;
+}
+
+/*RESORTS LIST*/

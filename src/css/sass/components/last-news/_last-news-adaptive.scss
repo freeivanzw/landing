@@ -65,15 +65,16 @@
         font-size: 16px;
     }
 
-    @media (hover: hover) {
-        .last_news-title:hover {
-            color: var(--accent-color-1);
-        }
-
-        .last_news-item:hover {
-            box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.08);
-        }
+    /* ------ hover ------ */
+    .last_news-title:hover {
+        color: var(--accent-color-1);
     }
+
+    .last_news-item:hover {
+        box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.08);
+    }
+    /* ------ hover ------ */
+
     /*LAST NEWS*/
 }
 
