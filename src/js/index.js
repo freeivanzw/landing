@@ -325,7 +325,101 @@ $(function () {
         $("html, body").stop().animate({scrollTop:0}, 500, 'swing');
     })
 
-    $('.test_slider').slick();
-    $('.order_payment').dropdown();
+    $('.big_slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        slidesToShow: 1,
+        mobileFirst: true,
+        asNavFor: $('.small_slider'),
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    dots: false,
+                    arrows: true,
+                }
+            }
+        ]
+    });
+
+
+    $('.small_slider').slick({
+        dots: false,
+        variableWidth: true,
+        arrows: true,
+        infinite: false,
+        slidesToShow: 1,
+        mobileFirst: true,
+        asNavFor: $('.big_slider'),
+    })
+
+    $('.small_slider').find('.small_slider-item').on('click', function (e) {
+        e.preventDefault();
+
+        let slidePost = $(this).data('slick-index');
+        $('.big_slider').slick('slickGoTo', slidePost);
+    })
+
+    $('.tabs_list').on('click', 'a', function (e) {
+        e.preventDefault();
+
+        $('.tabs_list').find('a').removeClass('active');
+        $(this).addClass('active');
+
+        $('.tab_box').addClass('hidden');
+        $('#' + $(this).data('tab')).removeClass('hidden');
+    })
+
+    $('.hotel_room-slider').slick({
+        dots: false,
+        variableWidth: true,
+        arrows: false,
+        infinite: false,
+        slidesToShow: 2,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 650,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 810,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 1184,
+                settings: {
+                    slidesToShow: 5,
+                }
+            }
+        ]
+    })
+
+    $('.hotel_room').each(function () {
+
+        if ($(this).find('.hotel_room-image').length > 6) {
+            $(this).find('.hotel_room-top').addClass('has_swipe');
+        }
+    })
+
+    $('.select_dropdown').dropdown();
+
 })
 

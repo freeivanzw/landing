@@ -105,10 +105,6 @@
 
 @mixin grid-slider-1024 {
     /*GRID SLIDER*/
-    .grid_slider-slick {
-        width: calc(100% + 20px);
-        margin-right: -20px;
-    }
     .grid_slider-slick .slick-list {
         padding: 6px 0 15px 12px;
         margin: -6px 0 -15px -12px;

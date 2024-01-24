@@ -11,6 +11,7 @@
 @import "components/read-more/read-more-adaptive";
 @import "components/popup-box/popup-box-adaptive";
 @import "components/resorts-list/resorts-list-adaptive";
+@import "components/hotel-details/hotel-details-adaptive";
 
 
 @media only screen and (min-width : 480px)  {
@@ -28,6 +29,7 @@
     @include read-more-480;
     @include popup-box-480;
     @include resorts-list-480;
+    @include hotel-details-480;
 }
 
 @media only screen and (min-width : 640px)  {
@@ -45,6 +47,7 @@
     @include read-more-640;
     @include popup-box-640;
     @include resorts-list-640;
+    @include hotel-details-640;
 }
 
 @media only screen and (max-width : 640px) {
@@ -68,6 +71,7 @@
     @include read-more-768;
     @include popup-box-768;
     @include resorts-list-768;
+    @include hotel-details-768;
 }
 
 @media only screen and (min-width : 1024px) {
@@ -85,6 +89,7 @@
     @include read-more-1024;
     @include popup-box-1024;
     @include resorts-list-1024;
+    @include hotel-details-1024;
 }
 
 @media only screen and (min-width : 1332px) {
@@ -103,4 +108,12 @@
     @include read-more-1332;
     @include popup-box-1332;
     @include resorts-list-1332;
+    @include hotel-details-1332;
+}
+
+@media only screen and (min-width : 1364px) {
+    .grid_slider-slick {
+        width: calc(100% + 20px);
+        margin-right: -20px;
+    }
 }

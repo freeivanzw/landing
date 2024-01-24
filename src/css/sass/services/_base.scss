@@ -144,7 +144,7 @@ article li + li {
 }
 
 a:active {
-    color: inherit;  /* НЕ УДАЛЯТИ */
+    color: var(--accent-color-1);  /* НЕ УДАЛЯТИ */
 }
 
 h1,
@@ -799,7 +799,7 @@ article > * {
 
 /*styled input*/
 .centre.site_grid {
-    overflow: hidden;
+    //overflow: hidden;
 }
 
 .up {
