@@ -567,8 +567,28 @@
             </div>
         </footer>
         <!-- POPUP BOX -->
-        <div class="popup_box"> <!-- active --> <!-- потрібно додавати до body клас overflow щоб заборонити скрол -->
-            <div class="popup active">
+        <div class="popup_box active"> <!-- active --> <!-- потрібно додавати до body клас overflow щоб заборонити скрол -->
+            <div class="popup reservation active">
+                <span class="H2">Бронювання онлайн</span>
+                <form class="call_back-form">
+                    <label class="styled_input">
+                        <div class="styled_box">
+                            <input type="text" placeholder="Ваше ім'я"/>
+                        </div>
+                    </label>
+                    <label class="styled_input">
+                        <div class="styled_box">
+                            <input type="tel" placeholder="+38 (000) 000 00 00"/>
+                        </div>
+                    </label>
+                    <button class="btn big_btn">Замовити дзвінок</button>
+                </form>
+                <span class="popup_bottom-info">Натискаючи на кнопку, ви даєте згоду на обробку персональних даних та погоджуєтесь з <a href="#">Договором офертою</a></span>
+                <div class="bottom_popup">
+                    <a href="#" class="close_popup">close</a>
+                </div>
+            </div>
+            <div class="popup">
                 <span class="H2">Замовити дзвінок</span>
                 <span class="popup_text">Заповніть коротку форму нижче і наш менеджер зв’яжеться з вами впродовж 15 хвилин</span>
                 <form class="call_back-form">
@@ -585,13 +605,17 @@
                     <button class="btn big_btn">Замовити дзвінок</button>
                 </form>
                 <span class="popup_bottom-info">Натискаючи на кнопку, ви даєте згоду на обробку персональних даних та погоджуєтесь з <a href="#">Договором офертою</a></span>
-                <a href="#" class="close_popup">close</a>
+                <div class="bottom_popup">
+                    <a href="#" class="close_popup">close</a>
+                </div>
             </div>
-            <div class="popup popup-thanks active">
+            <div class="popup popup-thanks">
                 <img src="./images/popup-pattern.png" width="160" height="160" class="popup_pattern" alt="popup pattern image">
                 <span class="H2">Дякуємо!</span>
                 <span class="popup_text">Ваша заявка прийнята. Наш менеджер зв’яжеться з вами впродовж 15 хвилин</span>
-                <a href="#" class="close_popup">close</a>
+                <div class="bottom_popup">
+                    <a href="#" class="close_popup">close</a>
+                </div>
             </div>
 
         </div>

@@ -251,7 +251,7 @@
         font-size: 14px;
     }
 
-    .price_table span {
+    .price_table td {
         padding: 10px 15px;
     }
 
@@ -282,6 +282,92 @@
 
     .promotion_banner-text {
         font-size: 18px;
+    }
+
+    .comments_list {
+        width: 100%;
+        margin: 0;
+    }
+
+    .comment_item {
+        padding: 20px;
+    }
+
+    .comment_top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+
+    .comment_top > .col:nth-child(2) {
+        order: 0;
+        margin-bottom: 0;
+    }
+
+    .comment_text {
+        font-size: 16px;
+    }
+
+    .comment_form {
+        margin: 80px 0 0 0;
+        padding: 40px 40px 50px 40px;
+        width: 100%;
+    }
+
+    .comment_form .pattern_tittle {
+        margin-bottom: 30px;
+    }
+
+    .comment_form .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+    .comment_form .styled_input {
+        margin-bottom: 20px;
+    }
+
+    .comment_form .rating {
+        margin-bottom: 30px;
+    }
+
+    .comment_form .rating .star {
+        width: 50px;
+        height: 50px;
+    }
+
+    .comment_form .rating .star img {
+        width: 46px;
+        height: 46px;
+    }
+
+    .comment_form .btn {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .details_accordion li + li {
+        margin-top: 30px;
+    }
+
+    .accordion_title {
+        font-size: 18px;
+        padding-bottom: 16px;
+    }
+
+    .accordion_title::before,
+    .accordion_title::after {
+        width: 20px;
+        top: 11px;
+        height: 2px;
+    }
+
+    .accordion_box {
+        font-size: 16px;
+        padding-bottom: 16px;
     }
 
     /*HOTEL DETAIL*/

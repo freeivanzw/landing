@@ -74,6 +74,13 @@
     color: var(--accent-color-1);
 }
 
+.bottom_popup {
+    position: sticky;
+    bottom: 0;
+    background-color: var(--accent-color-7);
+    width: calc(100% + 32px);
+    margin: 0 -16px;
+}
 .close_popup {
     font-size: 0;
     display: block;
