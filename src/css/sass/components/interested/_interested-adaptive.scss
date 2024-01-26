@@ -1,0 +1,56 @@
+@mixin interested-480 {
+    /*INTERESTED*/
+
+    /*INTERESTED*/
+}
+
+@mixin interested-640 {
+    /*INTERESTED*/
+
+    /*INTERESTED*/
+}
+
+@mixin interested-768 {
+    /*INTERESTED*/
+
+    /*INTERESTED*/
+}
+
+@mixin interested-1024 {
+    /*INTERESTED*/
+
+    .left_menu .interested {
+        display: flex;
+    }
+
+    .centre.site_grid > .content .interested {
+        display: none;
+    }
+
+    /* ------ hover ------ */
+    .interested_item:hover {
+        box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .interested_item-title:hover {
+        color: var(--accent-color-1);
+    }
+
+    .interested_item-link:hover {
+        background-color: var(--accent-color-1);
+        color: var(--base-color-1);
+    }
+
+    .interested_item-link:hover::before {
+        border-color: var(--base-color-1);
+    }
+
+    /* ------ hover ------ */
+    /*INTERESTED*/
+}
+
+@mixin interested-1332 {
+    /*INTERESTED*/
+
+    /*INTERESTED*/
+}

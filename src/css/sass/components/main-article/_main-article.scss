@@ -7,6 +7,22 @@
     margin-bottom: 22px;
 }
 
+.main_article time {
+    font-size: 12px;
+    color: #85858A;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main_article time .icon {
+    margin-right: 8px;
+    width: 14px;
+    height: 14px;
+    fill: #85858A;
+}
+
+
 //.main_article .pattern_tittle h1 {
 //    text-transform: unset;
 //}

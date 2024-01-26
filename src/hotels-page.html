@@ -208,6 +208,7 @@
                     <button class="btn"><svg class="icon"><use xlink:href="./images/sprite.svg#search"></use></svg></button>
                 </div>
             </form>
+            <span class="search_result-counter">За запитом <b>«Карпат»</b> знайдено 5 результатів.</span>
             <!-- CATALOG 2-3 LVL -->
             <ul class="catalog_2-3lvl">
                 <li class="has_drop">
@@ -508,32 +509,138 @@
 </footer>
 <!-- POPUP BOX -->
 <div class="popup_box"> <!-- active --> <!-- потрібно додавати до body клас overflow щоб заборонити скрол -->
-    <div class="popup active">
+    <div class="popup reservation_online">
+        <span class="H2">Бронювання онлайн</span>
+        <div class="popup_shadow before-shadow"></div>
+        <div class="popup-inner">
+            <div class="styled_input">
+                <span class="styled_label">Оберіть категорію номеру <i>*</i></span>
+                <div class="styled_box">
+                    <div class="dropdown">
+                        <div class="overflow">
+                            <span>1-місний Стандарт</span><button class="drop_arrow"></button>
+                        </div>
+                        <ul>
+                            <li><a href="#">4-місний Стандарт</a></li>
+                            <li><a href="#">3-місний Стандарт</a></li>
+                            <li><a href="#">2-місний Стандарт</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <form class="reservation_form">
+                <div class="reservation_grid">
+                    <div class="reservation_grid-item">
+                        <div class="styled_input">
+                            <span class="styled_label">Дітей <i>*</i></span>
+                            <div class="styled_box">
+                                <div class="dropdown">
+                                    <div class="overflow">
+                                        <span>0</span><button class="drop_arrow"></button>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="styled_input">
+                            <span class="styled_label">Дорослих <i>*</i></span>
+                            <div class="styled_box">
+                                <div class="dropdown">
+                                    <div class="overflow">
+                                        <span>1</span><button class="drop_arrow"></button>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reservation_grid-item">
+                        <div class="styled_input">
+                            <span class="styled_label">Дата заїзду <i>*</i></span>
+                            <div class="styled_box">
+                                <input type="date" size="1" placeholder="ДД.ММ.ГГГГ"/>
+                            </div>
+                        </div>
+                        <div class="styled_input">
+                            <span class="styled_label">Дата виїзду <i>*</i></span>
+                            <div class="styled_box">
+                                <input type="date" size="1" placeholder="ДД.ММ.ГГГГ"/>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="styled_input">
+                        <span class="styled_label">Ім’я, призвіще <i>*</i></span>
+                        <div class="styled_box">
+                            <input type="text" placeholder="Марічка Стерненко"/>
+                        </div>
+                    </label>
+                    <label class="styled_input">
+                        <span class="styled_label">Телефон <i>*</i></span>
+                        <div class="styled_box">
+                            <input type="tel" placeholder="+38 (000) 000 00 00"/>
+                        </div>
+                    </label>
+                    <label class="styled_input">
+                        <span class="styled_label">Email</span>
+                        <div class="styled_box">
+                            <input type="email" placeholder="example@mail.com"/>
+                        </div>
+                    </label>
+                    <label class="styled_input">
+                        <span class="styled_label">Коментар</span>
+                        <div class="styled_box">
+                            <input type="text" placeholder="Ваш коментар до броні"/>
+                        </div>
+                    </label>
+                </div>
+                <button type="submit" class="btn big_btn">Забронювати</button>
+                <span class="popup_bottom-info">Натискаючи на кнопку, ви даєте згоду на обробку персональних даних та погоджуєтесь з <a href="#">Договором офертою</a></span>
+            </form>
+        </div>
+        <div class="popup_shadow after-shadow"></div>
+        <a href="#" class="close_popup">close</a>
+    </div>
+    <div class="popup">
         <span class="H2">Замовити дзвінок</span>
-        <span class="popup_text">Заповніть коротку форму нижче і наш менеджер зв’яжеться з вами впродовж 15 хвилин</span>
-        <form class="call_back-form">
-            <label class="styled_input">
-                <div class="styled_box">
-                    <input type="text" placeholder="Ваше ім'я"/>
-                </div>
-            </label>
-            <label class="styled_input">
-                <div class="styled_box">
-                    <input type="tel" placeholder="+38 (000) 000 00 00"/>
-                </div>
-            </label>
-            <button class="btn big_btn">Замовити дзвінок</button>
-        </form>
-        <span class="popup_bottom-info">Натискаючи на кнопку, ви даєте згоду на обробку персональних даних та погоджуєтесь з <a href="#">Договором офертою</a></span>
+        <div class="popup_shadow before-shadow"></div>
+        <div class="popup-inner">
+            <span class="popup_text">Заповніть коротку форму нижче і наш менеджер зв’яжеться з вами впродовж 15 хвилин</span>
+            <form class="call_back-form">
+                <label class="styled_input">
+                    <div class="styled_box">
+                        <input type="text" placeholder="Ваше ім'я"/>
+                    </div>
+                </label>
+                <label class="styled_input">
+                    <div class="styled_box">
+                        <input type="tel" placeholder="+38 (000) 000 00 00"/>
+                    </div>
+                </label>
+                <button class="btn big_btn">Замовити дзвінок</button>
+            </form>
+            <span class="popup_bottom-info">Натискаючи на кнопку, ви даєте згоду на обробку персональних даних та погоджуєтесь з <a href="#">Договором офертою</a></span>
+        </div>
+        <div class="popup_shadow after-shadow"></div>
         <a href="#" class="close_popup">close</a>
     </div>
-    <div class="popup popup-thanks active">
-        <img src="./images/popup-pattern.png" width="160" height="160" class="popup_pattern" alt="popup pattern image">
-        <span class="H2">Дякуємо!</span>
-        <span class="popup_text">Ваша заявка прийнята. Наш менеджер зв’яжеться з вами впродовж 15 хвилин</span>
+    <div class="popup popup-thanks">
+        <div class="popup_shadow before-shadow"></div>
+        <div class="popup-inner">
+            <img src="./images/popup-pattern.png" width="160" height="160" class="popup_pattern" alt="popup pattern image">
+            <span class="H2">Дякуємо!</span>
+            <span class="popup_text">Ваша заявка прийнята. Наш менеджер зв’яжеться з вами впродовж 15 хвилин</span>
+        </div>
+        <div class="popup_shadow after-shadow"></div>
         <a href="#" class="close_popup">close</a>
     </div>
-
 </div>
 
 <div class="black hidden"></div>

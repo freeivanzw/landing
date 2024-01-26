@@ -412,12 +412,75 @@ $(function () {
         ]
     })
 
+    $('.hotel_zoom').slick({
+        dots: true,
+        slidesToShow: 1,
+        arrows: false,
+        infinite: false,
+        mobileFirst: true,
+        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: true,
+                    dots: false,
+                }
+            }
+        ]
+    })
+
     $('.hotel_room').each(function () {
 
         if ($(this).find('.hotel_room-image').length > 6) {
             $(this).find('.hotel_room-top').addClass('has_swipe');
         }
     })
+
+    $('.popup-inner').each(function () {
+        const $scrollBox = $(this);
+
+        const $topShadow = $scrollBox.prev('.before-shadow');
+        const $bottomShadow = $scrollBox.next('.after-shadow');
+
+        let containerHeight = Math.round($scrollBox.height());
+        let contentHeight = $scrollBox.prop('scrollHeight');
+        let scrollTop = $scrollBox.scrollTop();
+
+
+        if (containerHeight < contentHeight) {
+            $bottomShadow.addClass('active');
+        }
+
+        $(window).on('resize', function () {
+            containerHeight = Math.round($scrollBox.height());
+            contentHeight = $scrollBox.prop('scrollHeight');
+
+            if (containerHeight < contentHeight) {
+                $bottomShadow.addClass('active');
+            } else {
+                $bottomShadow.removeClass('active');
+            }
+        });
+
+        $scrollBox.on('scroll', function () {
+            scrollTop = $scrollBox.scrollTop();
+
+            if (scrollTop > 0) {
+                $topShadow.addClass('active');
+            } else {
+                $topShadow.removeClass('active');
+            }
+
+            if (containerHeight + scrollTop >= contentHeight) {
+                $bottomShadow.removeClass('active');
+            } else {
+                $bottomShadow.addClass('active');
+            }
+        })
+    })
+
+
 
     $('.select_dropdown').dropdown();
 

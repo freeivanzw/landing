@@ -18,6 +18,11 @@
 
 @mixin main-article-1024 {
     /*MAIN ARTICLE*/
+    .main_article time {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
     .article_content > * {
         margin-bottom: 30px;
     }

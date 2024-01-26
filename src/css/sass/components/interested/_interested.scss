@@ -1,0 +1,111 @@
+/*INTERESTED*/
+.interested {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.left_menu .interested {
+    display: none;
+}
+
+.interested_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.interested_item {
+    display: flex;
+    border: 1px solid var(--accent-color-4);
+    background: var(--base-color-1);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.0);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.interested_item + .interested_item {
+    margin-top: 10px;
+}
+
+.interested_item > .col:nth-child(1) {
+    flex: 0 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interested_item-img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 4px;
+}
+
+.interested_item-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.interested_item time {
+    font-size: 12px;
+    color: var(--base-color-6);
+    text-align: center;
+}
+
+.interested_item > .col:nth-child(2) {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.interested_item-title {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 6px;
+    transition: 0.3s;
+}
+
+.interested_item-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.interested_item-link {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--accent-color-1);
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 3px 22px 3px 6px;
+    background-color: var(--accent-color-6);
+    position: relative;
+    transition: 0.3s;
+}
+
+.interested_item-link::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid var(--accent-color-1);
+    border-bottom: 1px solid var(--accent-color-1);
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    transform: translateY(-50%) rotate(-45deg);
+    transition: 0.3s;
+}
+
+
+/*INTERESTED*/

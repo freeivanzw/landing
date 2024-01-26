@@ -1,0 +1,102 @@
+@mixin articles-list-480 {
+    /*ARTICLES LIST*/
+
+    /*ARTICLES LIST*/
+}
+
+@mixin articles-list-640 {
+    /*ARTICLES LIST*/
+
+    /*ARTICLES LIST*/
+}
+
+@mixin articles-list-768 {
+    /*ARTICLES LIST*/
+
+    .resort_filter {
+        margin-bottom: 34px;
+    }
+
+    .resort_filter a {
+        font-size: 16px;
+        padding: 8px 14px;
+    }
+
+    .article_item {
+        flex-direction: row;
+    }
+
+    .article_item > .col:nth-child(1) {
+        flex: 0 0 300px;
+    }
+
+    .article_item > .col:nth-child(2) {
+        flex: 1 1 auto;
+        padding: 22px 25px 25px 25px;
+    }
+
+    .article_item-img {
+        padding-bottom: 74%;
+        margin-bottom: 0;
+    }
+
+    .article_item-img img {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .article_item time {
+        font-size: 14px;
+    }
+
+    .article_item-title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .article_item-text {
+        font-size: 14px;
+        -webkit-line-clamp: 3;
+    }
+
+    .article_item-link {
+        font-size: 16px;
+        margin-top: auto;
+    }
+
+    /*ARTICLES LIST*/
+}
+
+@mixin articles-list-1024 {
+    /*ARTICLES LIST*/
+
+    /* ------ hover ------ */
+
+    .resort_filter a:not(.active):hover {
+        background-color: var(--accent-color-5);
+    }
+
+    .article_item:hover {
+        box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .article_item-title:hover {
+        color: var(--accent-color-1);
+    }
+
+    .article_item-link:hover {
+        background-color: var(--accent-color-1);
+        color: var(--base-color-1);
+    }
+
+    .article_item-link:hover::before {
+        border-color: var(--base-color-1);
+    }
+    /* ------ hover ------ */
+    /*ARTICLES LIST*/
+}
+
+@mixin articles-list-1332 {
+    /*ARTICLES LIST*/
+
+    /*ARTICLES LIST*/
+}

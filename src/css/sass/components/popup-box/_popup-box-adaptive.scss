@@ -14,6 +14,7 @@
     /*POPUP BOX*/
     .popup_box {
         border-top: none;
+        overflow-y: auto;
         height: 100%;
         top: 0;
         padding-top: 100px;
@@ -22,10 +23,26 @@
 
     .popup {
         max-width: 480px;
+        max-height: unset;
         padding: 40px 40px 50px 40px;
         border-radius: var(--border-radius);
         position: relative;
         box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.35);
+    }
+
+    .popup.reservation_online {
+        max-width: 760px;
+    }
+
+    .popup-inner {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-y: unset;
+    }
+
+    .popup_shadow {
+        display: none;
     }
 
     .popup.popup-thanks {
@@ -34,10 +51,6 @@
 
     .popup.popup-thanks .popup_text {
         margin-bottom: 0;
-    }
-
-    .bottom_popup {
-        position: unset;
     }
 
     .close_popup {
@@ -53,7 +66,21 @@
     }
 
     .popup .styled_input {
-        margin-bottom: 16px;
+        margin-bottom: 20px;
+    }
+
+    .reservation_grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .reservation_grid > * {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+
+    .reservation_grid > *:nth-child(2n + 2) {
+        margin-left: 20px;
     }
 
     /*POPUP BOX*/
