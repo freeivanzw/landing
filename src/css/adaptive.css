@@ -188,6 +188,17 @@
     margin-bottom: 12px;
   }
 
+  .pattern_tittle {
+    align-items: flex-end;
+  }
+
+  .pattern_tittle .H2,
+.pattern_tittle .H1,
+.pattern_tittle h1,
+.pattern_tittle h2 {
+    flex: 0 1 auto;
+  }
+
   /*btn*/
   .btn {
     font-size: 16px;
@@ -939,16 +950,6 @@
     margin-bottom: 20px;
   }
 
-  .details_rating .star {
-    width: 30px;
-    height: 30px;
-  }
-
-  .details_rating .star img {
-    width: 26px;
-    height: 26px;
-  }
-
   .details_info-title {
     margin-bottom: 14px;
   }
@@ -1014,6 +1015,10 @@
     margin: 0;
   }
 
+  .hotel_gallery-image {
+    padding-bottom: 83%;
+  }
+
   .promotion_banner {
     width: 100%;
     margin: 0 0 40px 0;
@@ -1040,6 +1045,10 @@
 
   .comment_item {
     padding: 20px;
+  }
+
+  .comment_item + .comment_item {
+    margin-top: 20px;
   }
 
   .comment_top {
@@ -1084,7 +1093,7 @@
   }
 
   .comment_form .rating .star {
-    width: 50px;
+    width: 60px;
     height: 50px;
   }
 
@@ -1321,6 +1330,10 @@ textarea:hover {
 
   .breadcrumbs ul a:hover {
     color: var(--accent-color-1);
+  }
+
+  .styled_input {
+    margin-bottom: 24px;
   }
 
   /* ------ hover ------ */
@@ -1683,6 +1696,10 @@ textarea:hover {
   /* ------ hover ------ */
   /*RESORTS LIST*/
   /*HOTEL DETAIL*/
+  .hotel_details .H1 {
+    margin-bottom: 46px;
+  }
+
   .tabs_list {
     height: 50px;
   }

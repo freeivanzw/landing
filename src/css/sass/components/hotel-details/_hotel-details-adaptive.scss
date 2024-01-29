@@ -190,16 +190,6 @@
         margin-bottom: 20px;
     }
 
-    .details_rating .star {
-        width: 30px;
-        height: 30px;
-    }
-
-    .details_rating .star img {
-        width: 26px;
-        height: 26px;
-    }
-
     .details_info-title {
         margin-bottom: 14px;
     }
@@ -265,6 +255,10 @@
         margin: 0;
     }
 
+    .hotel_gallery-image {
+        padding-bottom: 83%;
+    }
+
     .promotion_banner {
         width: 100%;
         margin: 0 0 40px 0;
@@ -291,6 +285,10 @@
 
     .comment_item {
         padding: 20px;
+    }
+
+    .comment_item + .comment_item {
+        margin-top: 20px;
     }
 
     .comment_top {
@@ -335,7 +333,7 @@
     }
 
     .comment_form .rating .star {
-        width: 50px;
+        width: 60px;
         height: 50px;
     }
 
@@ -375,6 +373,10 @@
 
 @mixin hotel-details-1024 {
     /*HOTEL DETAIL*/
+
+    .hotel_details .H1 {
+        margin-bottom: 46px;
+    }
 
     .tabs_list {
         height: 50px;

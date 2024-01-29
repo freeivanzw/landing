@@ -57,7 +57,18 @@
         margin-bottom: 12px;
     }
 
-    /*btn*/
+    .pattern_tittle {
+        align-items: flex-end;
+    }
+
+    .pattern_tittle .H2,
+    .pattern_tittle .H1,
+    .pattern_tittle h1,
+    .pattern_tittle h2 {
+        flex: 0 1 auto;
+    }
+
+        /*btn*/
     .btn {
         font-size: 16px;
         min-height: 44px;
@@ -215,6 +226,10 @@
 
     .breadcrumbs ul a:hover {
         color: var(--accent-color-1);
+    }
+
+    .styled_input {
+        margin-bottom: 24px;
     }
     /* ------ hover ------ */
 

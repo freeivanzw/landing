@@ -190,7 +190,6 @@ h4,
 
 .pattern_tittle {
     display: flex;
-    //align-items: flex-end;
     margin-bottom: 25px;
 }
 
@@ -198,6 +197,7 @@ h4,
 .pattern_tittle .H1,
 .pattern_tittle h1,
 .pattern_tittle h2 {
+    flex: 0 0 calc(100% - 32px);
     font-size: 24px;
     max-width: calc(100% - 32px);
     margin-bottom: 0;
@@ -230,6 +230,10 @@ h4,
     background-position: center;
 }
 
+.left_menu .pattern_tittle .H2 {
+    flex: 0 0 calc(100% - 32px);
+}
+
 article > * {
     margin-bottom: 22px;
 }
@@ -242,7 +246,7 @@ article > * {
 }
 
 .centre.temp-2 {
-    max-width: 960px;
+    max-width: 990px;
 }
 
 .close_btn {
@@ -747,7 +751,7 @@ article > * {
 .styled_input {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .styled_label {
