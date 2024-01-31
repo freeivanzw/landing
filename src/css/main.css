@@ -710,6 +710,7 @@ article > * {
 }
 
 .drop_arrow {
+  font-size: 0;
   position: absolute;
   right: 0;
   top: 0;
@@ -1134,8 +1135,14 @@ article > * {
   left: 18px;
 }
 
+.pagination ul a.prev,
+.pagination ul a.to-start {
+  font-size: 0;
+}
+
 .pagination ul a.next,
 .pagination ul a.to-end {
+  font-size: 0;
   transform: rotate(180deg);
 }
 
@@ -1213,6 +1220,7 @@ article > * {
 }
 
 .top_mob-logo {
+  font-size: 0;
   flex: 0 0 36px;
   display: block;
   width: 36px;
@@ -2159,6 +2167,7 @@ article > * {
 }
 
 .search_left-inner .btn {
+  font-size: 0;
   width: 40px;
   height: 40px;
   min-height: 40px;

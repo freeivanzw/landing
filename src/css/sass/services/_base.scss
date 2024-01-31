@@ -510,6 +510,7 @@ article > * {
     display: none;
 }
 .drop_arrow {
+    font-size: 0;
     position: absolute;
     right: 0;
     top: 0;
@@ -925,8 +926,14 @@ article > * {
     left: 18px;
 }
 
+.pagination ul a.prev,
+.pagination ul a.to-start {
+    font-size: 0;
+}
+
 .pagination ul a.next,
 .pagination ul a.to-end {
+    font-size: 0;
     transform: rotate(180deg);
 }
 
